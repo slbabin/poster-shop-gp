@@ -1,6 +1,23 @@
 from django.contrib import admin
 from .models import Poster, Category
 
+class ProductAdmin(admin.ModelAdmin):
+    list_display = (
+        'sku',
+        'title',
+        'category',
+        'price',
+        'image',
+    )
 
-admin.site.register(Poster)
-admin.site.register(Category)
+    ordering = ('sku',)
+
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = (
+        
+        'name',
+    )
+
+
+admin.site.register(Poster, ProductAdmin)
+admin.site.register(Category, CategoryAdmin)
