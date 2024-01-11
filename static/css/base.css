@@ -88,3 +88,14 @@ z-index: -1;
         padding-top: 164px;
     }
 }
+
+
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 100px;
+    }
+
+    body {
+        height: calc(100vh - 100px);
+    }
+}
