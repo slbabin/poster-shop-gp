@@ -1,15 +1,21 @@
 from django.shortcuts import render, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Poster
+from .models import Poster, Category
 
 def all_posters(request):
     """ A view to display all posters"""
 
     posters= Poster.objects.all()
     query = None
+    categories = None
 
     if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            posters = posters.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -24,6 +30,7 @@ def all_posters(request):
     context = {
         'posters' : posters, 
         'search_term': query,
+        'current_categories': categories,
     }
     
     return render(request, 'products/posters.html', context)

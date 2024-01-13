@@ -16,10 +16,11 @@
                 Poster Category
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Sport</a>
-                <a href="" class="dropdown-item">Vintage</a>
-                <a href="" class="dropdown-item">Cinema</a>
-                <a href="" class="dropdown-item">All categories</a>
+                <a href="{% url 'posters' %}?category=Sport" class="dropdown-item">Sport</a>
+                <a href="{% url 'posters' %}?category=Vintage war posters" class="dropdown-item">Vintage war posters</a>
+                <a href="{% url 'posters' %}?category=Cinema" class="dropdown-item">Cinema</a>
+                <a href="{% url 'posters' %}?category=Retro" class="dropdown-item">Retro</a>
+                <a href="{% url 'posters' %}?category=Sport,Vintage war posters,Cinema,Retro" class="dropdown-item">All categories</a>
             </div>
         </li>
 
