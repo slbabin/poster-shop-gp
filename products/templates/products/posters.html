@@ -130,7 +130,11 @@
 
 <script type="text/javascript">
 $('.btt-link').click(function(e){
-    window.scrollTo(0, 0)
+    window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: "smooth",
+});
 })
 </script>
 <script type="text/javascript">
