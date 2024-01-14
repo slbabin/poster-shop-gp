@@ -1,6 +1,7 @@
 from django.shortcuts import render, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 from .models import Poster, Category
 
 def all_posters(request):
@@ -18,7 +19,7 @@ def all_posters(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                posters = posters.annotate(lower_name=Lower('name'))
+                posters = posters.annotate(lower_name=Lower('title'))
 
             if sortkey == 'category':
                     sortkey = 'category__name'
