@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
 from django.contrib import messages
+
 from products.models import Poster
 
 
@@ -30,13 +31,15 @@ def add_to_bag(request, item_id):
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
 
+        messages.success(request, f'Added {product.title} to your bag')       
+
     else:
 
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
         else:
             bag[item_id] = quantity
-            messages.success(request, f'Added {product.name} to your bag')
+            #messages.success(request, f'Added {product.title} to your bag')
 
     request.session['bag'] = bag
     return redirect(redirect_url)
