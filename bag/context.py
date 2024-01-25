@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404
 from products.models import Poster
 
 
-def bag_content(request):
+def bag_contents(request):
 
     bag_items = []
     total = 0
