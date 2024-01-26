@@ -37,7 +37,7 @@ def checkout(request):
                 try:
                     product = Poster.objects.get(id=item_id)
                     if isinstance(item_data, int):
-                        order_line_item = OrderLineItem(
+                        order_line_item = OrderItem(
                             order=order,
                             product=product,
                             quantity=item_data,
@@ -45,14 +45,15 @@ def checkout(request):
                         order_line_item.save()
                     else:
                         for size, quantity in item_data['items_by_size'].items():
-                            order_line_item = OrderLineItem(
+                            order_line_item = OrderItem(
                                 order=order,
-                                product=product,
+                                poster=product,
                                 quantity=quantity,
-                                product_size=size,
+                                poster_size=size,
                             )
                             order_line_item.save()
-                except Product.DoesNotExist:
+
+                except Poster.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
                         "Please call us for assistance!")
