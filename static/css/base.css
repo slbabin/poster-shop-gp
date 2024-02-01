@@ -155,6 +155,10 @@ a.category-badge > span.badge:hover{
     overflow-y: auto;
 }
 
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
 /* Allauth form formatting */
 
 .allauth-form-inner-content p {
@@ -207,7 +211,7 @@ a.category-badge > span.badge:hover{
 
 .allauth-form-inner-content a {
 	color: #17a2b8; /* text-info */
-
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
