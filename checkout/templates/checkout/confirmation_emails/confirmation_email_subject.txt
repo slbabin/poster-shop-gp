@@ -1,0 +1,1 @@
+Oder confirmation from Poster Shop | Order Number {{ order.order_id }}
