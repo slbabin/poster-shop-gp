@@ -1,9 +1,10 @@
-from django.shortcuts import render, reverse, get_object_or_404
+from django.shortcuts import render, reverse, get_object_or_404, redirect
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Poster, Category
 from .forms import PosterForm
+
 
 def all_posters(request):
     """ A view to display all posters"""
