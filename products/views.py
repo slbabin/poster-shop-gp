@@ -71,7 +71,17 @@ def poster_detail(request, poster_id):
 
 
 def add_poster(request):
-    form = PosterForm()
+    if request.method == 'POST':
+        form = PosterForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added poster')
+            return redirect(reverse('add_poster'))
+        else:
+            messages.error(request, 'Failed to add poster. Check if all fields a valid.')    
+    else:
+
+        form = PosterForm()
     template = 'products/add_poster.html'
     context = {
         'form': form,
