@@ -2,6 +2,7 @@ from django.http import HttpResponse
 
 from .models import Order, OrderItem
 from products.models import Poster
+from profiles.models import UserProfile
 
 import json
 
@@ -41,7 +42,23 @@ class StripeWH_Handler:
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
-        
+
+
+        #Updating profile info if save info was checked
+        profile = None
+        username = intent.metadata.username
+        if username != 'AnonymousUser':
+            profile = UserProfile.objects.get(user__username=username)
+            if save_info:
+                profile.default_phone = shipping_details.phone
+                profile.default_country = shipping_details.address.country
+                profile.default_postcode = shipping_details.address.postal_code
+                profile.default_city = shipping_details.address.city
+                profile.default_street_address1 = shipping_details.address.line1
+                profile.default_street_address2 = shipping_details.address.line2
+                profile.default_county = shipping_details.address.state
+                profile.save()
+
         order_exists = False
         attempt = 1
         while attempt <= 5:
@@ -73,9 +90,11 @@ class StripeWH_Handler:
             return HttpResponse(
                 content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
                 status=200)   
-        else:           
+        else:
+            order = None          
             try:
                 order = Order.objects.create(
+                    user_profile=profile,
                     name=shipping_details.name,
                     email=billing_details.email,
                     phone=shipping_details.phone,
