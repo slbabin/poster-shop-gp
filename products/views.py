@@ -4,6 +4,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Poster, Category
 from .forms import PosterForm
+from django.contrib.auth.decorators import login_required
 
 
 def all_posters(request):
@@ -70,8 +71,12 @@ def poster_detail(request, poster_id):
     
     return render(request, 'products/poster_detail.html', context)
 
-
+@login_required
 def add_poster(request):
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, this action can be performed only by admin.")
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = PosterForm(request.POST, request.FILES)
         if form.is_valid():
@@ -90,7 +95,12 @@ def add_poster(request):
 
     return render(request, template, context)
 
+@login_required
 def edit_poster(request, poster_id):
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, this action can be performed only by admin.")
+        return redirect(reverse('home'))
+
     poster = get_object_or_404(Poster, pk=poster_id)
 
     if request.method == 'POST':
@@ -114,7 +124,12 @@ def edit_poster(request, poster_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_poster(request, poster_id):
+    if not request.user.is_superuser:
+        messages.error(request, "Sorry, this action can be performed only by admin.")
+        return redirect(reverse('home'))
+        
     poster = get_object_or_404(Poster, pk=poster_id)
     poster.delete()
     messages.success(request, 'Successfully deleted  poster')
