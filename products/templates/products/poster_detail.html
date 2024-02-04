@@ -38,8 +38,15 @@
                     </a>
                 </p>
                 {% endif %}
+                {% if request.user.is_superuser %}
+                    <small class="ml-2">
+                        <a href="{% url 'edit_poster' poster.id %}">Edit</a>
+                        <a class="text-danger" href="{% url 'delete_poster' poster.id %}">Delete</a>
+                    </small>
+                {% endif %}
                 <p class="mb-0">{{ poster.artist }}</p>
-                <p class="mb-0">{{ poster.description }}</p>
+                <p class="mb-0">{{ poster.description }}</p>                
+
 
                 <form class="form" action="{% url 'add_to_bag' poster.id %}" method="POST">
                     {% csrf_token %}

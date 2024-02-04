@@ -75,9 +75,9 @@ def add_poster(request):
     if request.method == 'POST':
         form = PosterForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            poster = form.save()
             messages.success(request, 'Successfully added poster')
-            return redirect(reverse('add_poster'))
+            return redirect(reverse('poster_detail', args=[poster.id]))
         else:
             messages.error(request, 'Failed to add poster. Check if all fields a valid.')    
     else:
@@ -114,3 +114,8 @@ def edit_poster(request, poster_id):
     return render(request, template, context)
 
 
+def delete_poster(request, poster_id):
+    poster = get_object_or_404(Poster, pk=poster_id)
+    poster.delete()
+    messages.success(request, 'Successfully deleted  poster')
+    return redirect(reverse('posters'))

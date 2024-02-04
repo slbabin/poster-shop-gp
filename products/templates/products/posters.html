@@ -83,7 +83,14 @@
                                     </p>
                                     {% endif %}
 
-                                    <p class="lead mb-0 text-left font-weight-bold">Artist: {{ poster.artist}}</p>
+                                    <p class="lead mb-0 text-left font-weight-bold">Artist sdfsd: {{ poster.artist}}</p>
+
+                                    {% if request.user.is_superuser %}
+                                        <small class="ml-2">
+                                            <a href="{% url 'edit_poster' poster.id %}">Edit</a>
+                                            <a class="text-danger" href="{% url 'delete_poster' poster.id %}">Delete</a>
+                                        </small>
+                                    {% endif %}
                                 </div>
                             </div>
                            
