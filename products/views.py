@@ -90,3 +90,27 @@ def add_poster(request):
 
     return render(request, template, context)
 
+def edit_poster(request, poster_id):
+    poster = get_object_or_404(Poster, pk=poster_id)
+
+    if request.method == 'POST':
+        form = PosterForm(request.POST, request.FILES, instance = poster)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated the poster')
+            return redirect(reverse('poster_detail', args=[poster.id]))
+        else:
+            messages.error(request, 'Failed to update poster. Check if all fields a valid.') 
+    else:        
+        form = PosterForm(instance=poster)
+        messages.info(request, f'You are editing {poster.title}')
+
+    template = 'products/edit_poster.html'
+    context = {
+        'form': form,
+        'poster': poster
+    }
+
+    return render(request, template, context)
+
+
