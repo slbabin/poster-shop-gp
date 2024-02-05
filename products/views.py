@@ -45,7 +45,7 @@ def all_posters(request):
                 messages.error("request, You didn't enter any search query")
                 return redirect(reverse('posters'))
 
-            queries = Q(title__icontains=query) | Q(description__icontains=query)
+            queries = Q(title__icontains=query) | Q(description__icontains=query) | Q(artist__icontains=query)
             posters = posters.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
