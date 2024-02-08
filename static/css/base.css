@@ -39,13 +39,13 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #800303;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background: black;
+    background: #800303;
     color: white;
 
 }
@@ -61,7 +61,7 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: #ad6666;
     color: white;
 }
 
@@ -99,6 +99,16 @@ a.category-badge > span.badge:hover{
 .update-link, 
 .remove-item {
     cursor: pointer;
+}
+
+.poster-title{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.size-dropdown{
+    float: left;
+    vertical-align: middle;
+    margin-right: 20px;
 }
 
 .message-container {
