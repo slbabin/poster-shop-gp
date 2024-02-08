@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid main-content-container h-100">
+    <div class="row">
+        <div class="col text-center mt-3">
+
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+
+
+
+    <!-- FAQ Area-->
+    <div class="faq_area section_padding_130" id="faq">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-6">
+                    <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s"
+                        style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                        <h3><span>Frequently </span> Asked Questions</h3>
+
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-10 col-lg-8">
+                    <div class="accordion faq-accordian" id="faqAccordion">
+                        <!-- Question 1 -->
+                        <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s"
+                            style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                            <div class="card-header" id="headingOne">
+                                <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">Are your vintage posters
+                                    authentic?<span class="lni-chevron-up"></span></h6>
+                            </div>
+                            <div class="collapse" id="collapseOne" aria-labelledby="headingOne"
+                                data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>Yes, all of our vintage posters are authentic originals sourced from trusted
+                                        suppliers and collectors. We take pride in offering genuine vintage pieces that
+                                        reflect the charm and character of bygone eras.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Question 2 -->
+                        <div class="card border-0 wow fadeInUp" data-wow-delay="0.3s"
+                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                            <div class="card-header" id="headingTwo">
+                                <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="true" aria-controls="collapseTwo">Do you offer framing services for
+                                    the posters?<span class="lni-chevron-up"></span></h6>
+                            </div>
+                            <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                                data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>No, at this time we do not offer framing service. But are planning to implement
+                                        this service soon.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Question 3 -->
+                        <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s"
+                            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                            <div class="card-header" id="headingThree">
+                                <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="true" aria-controls="collapseThree">How do you package and ship the
+                                    posters?<span class="lni-chevron-up"></span></h6>
+                            </div>
+                            <div class="collapse" id="collapseThree" aria-labelledby="headingThree"
+                                data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>We take great care in packaging your vintage posters to ensure they arrive safely
+                                        and in pristine condition. Each poster is securely rolled and packaged in a
+                                        sturdy tube or flat mailer, depending on its size and format. We use reliable
+                                        shipping carriers to deliver your order to your doorstep.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Question 4 -->
+                        <div class="card border-0 wow fadeInUp" data-wow-delay="0.5s"
+                            style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                            <div class="card-header" id="headingFour">
+                                <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                    aria-expanded="true" aria-controls="collapseFour">Can I return a vintage poster if
+                                    I'm not satisfied with my purchase?<span class="lni-chevron-up"></span></h6>
+                            </div>
+                            <div class="collapse" id="collapseFour" aria-labelledby="headingFour"
+                                data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>Yes, we offer a hassle-free return policy. If you're not entirely satisfied with
+                                        your vintage poster(s), you can initiate a return within 30 days of the delivery
+                                        date. Please refer to our Return Policy page for more information on the return
+                                        process and eligibility criteria.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Question 5-->
+                        <div class="card border-0 wow fadeInUp" data-wow-delay="0.6s"
+                            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                            <div class="card-header" id="headingThree">
+                                <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFive"
+                                    aria-expanded="true" aria-controls="collapseFive">Are the posters available in
+                                    different sizes?<span class="lni-chevron-up"></span></h6>
+                            </div>
+                            <div class="collapse" id="collapseFive" aria-labelledby="headingFive"
+                                data-parent="#faqAccordion">
+                                <div class="card-body">
+                                    <p>Yes, we offer vintage posters in various sizes to accommodate different
+                                        preferences and display spaces. You can find the available sizes listed on the
+                                        product page for each poster. If you have specific size requirements, please
+                                        contact us, and we'll do our best to assist you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp"
+                        data-wow-delay="0.5s"
+                        style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                        <i class="lni-emoji-sad"></i>
+                        <p class="mb-0 px-2">Can't find your answers?</p>
+                        <a href="{% url 'contact' %}"> Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="w-50 mb-1">
+
+</div>
+
+{% endblock %}
