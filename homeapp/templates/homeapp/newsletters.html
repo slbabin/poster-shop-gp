@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+
+    <section id="newsletter-subscription-section" class="container newsletter-container">
+
+        <div class="row">
+            <div class="col">
+                <br>
+                <h2 class="mb-4 other-headings">Newsletter</h2>
+                <hr class="checkout-hr">
+                <h3 class="mb-4 add-game-heading other-headings">Subscribe to our newsletter and get the latest news,
+                    special offers and more!</h3>
+                <hr class="checkout-hr">
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-12 col-md-6 rounded">
+                <form method="POST" class="form mb-3 mt-3">
+                    {% csrf_token %}
+    
+                    {{ form|crispy }}
+                    <div class="text-right">
+                        <a class="btn btn-shopping-basket rounded mr-2 text-uppercase"
+                            href="{% url 'posters' %}"
+                            aria-label="takes user to the main poster page">Cancel</a>
+                        <button id="subscribe-button" class="btn btn-shopping-basket rounded text-uppercase" type="submit"
+                            aria-label="subscribes to site newsletter">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+</div>
+    {% endblock %}
