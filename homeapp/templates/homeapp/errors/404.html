@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container">
+    <!-- Error handler 404 page -->
+    <section>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <hr>
+                    <h2 class="logo-font mb-4">Error</h2>
+                    <h5 class="text-muted">404 Message</h5>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h1>This page not found</h1>
+                    <h3>Thank you! While encountering a 404 error can be frustrating, it's always nice to see a creative
+                        or humorous message to lighten the mood. If you need any assistance or have any questions, feel
+                        free to ask!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

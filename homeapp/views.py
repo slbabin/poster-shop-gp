@@ -32,7 +32,11 @@ def contact (request):
     
     return render(request, 'homeapp/contact.html')    
 
-
+def shipping (request):
+    """ A view to return contact page  """
+    
+    return render(request, 'homeapp/shipping.html') 
+    
 
 def newsletters(request):
     """ A view to subscribe to site newsletters """
