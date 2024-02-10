@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import NewsletterForm
+from .forms import NewsletterForm, ContactForm
 from django.contrib import messages
 
 
@@ -36,7 +36,12 @@ def shipping (request):
     """ A view to return contact page  """
     
     return render(request, 'homeapp/shipping.html') 
+
+
+def faq (request):
+    """ A view to return contact page  """
     
+    return render(request, 'homeapp/faq.html') 
 
 def newsletters(request):
     """ A view to subscribe to site newsletters """
@@ -51,6 +56,26 @@ def newsletters(request):
             return redirect('home')
         messages.error(request, 'An error has occurred. Please try again.')
     template = 'homeapp/newsletters.html'
+    context = {
+        'form': form,
+    }
+    return render(request, template, context)
+
+
+
+def contact(request):
+    """ A view to contact the site admin"""
+    form = ContactForm(request.POST or None, user=request.user)
+
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request, 'Thanks for contacting us! We will reply you as soon as we can.'
+                )
+            return redirect('home')
+        messages.error(request, 'An error has occurred. Please try again.')
+    template = 'homeapp/contact.html'
     context = {
         'form': form,
     }

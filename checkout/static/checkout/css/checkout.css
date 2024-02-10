@@ -62,3 +62,7 @@ select:invalid {
     margin: 0;
     height: 100%;
 }
+
+.text-info {
+  color: #800303!important;
+}

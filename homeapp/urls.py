@@ -9,6 +9,7 @@ urlpatterns = [
     path('return/', views.returnpolicy, name='return' ),
     path('contact/', views.contact, name='contact' ),
     path('shipping/', views.shipping, name='shipping' ),
+    path('faq/', views.faq, name='faq' ),
     path('newsletters/', views.newsletters, name='newsletters' ),
     
 ]
