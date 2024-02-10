@@ -43,6 +43,11 @@ body {
     color: white;
     min-width: 260px;
 }
+.contact-btn {
+    background: #800303;
+    color: white;
+    min-width: 100px;
+}
 
 .btn-black {
     background: #800303;

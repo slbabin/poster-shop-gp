@@ -18,10 +18,10 @@
         <div class="row">
             <div class="col">
                 <br>
-                <h2 class="mb-4 other-headings">Contact us</h2>
-                <hr class="checkout-hr">
+                <h2 class="mb-4 logo-font ">Contact us</h2>
+                <hr>
                 <h3 class="mb-4 add-game-heading other-headings">Send us an email and we will reply to you as soon as we can!</h3>
-                <hr class="checkout-hr">
+                <hr>
             </div>
         </div>
         <div class="row ">
@@ -31,10 +31,10 @@
     
                     {{ form|crispy }}
                     <div class="text-right">
-                        <a class="btn btn-shopping-basket rounded mr-2 text-uppercase"
+                        <a class="btn contact-btn rounded mr-2 text-uppercase"
                             href="{% url 'posters' %}"
                             aria-label="takes user to the main poster page">Cancel</a>
-                        <button id="subscribe-button" class="btn btn-shopping-basket rounded text-uppercase" type="submit"
+                        <button id="subscribe-button" class="btn contact-btn rounded text-uppercase" type="submit"
                             aria-label="subscribes to site newsletter">Send</button>
                     </div>
                 </form>

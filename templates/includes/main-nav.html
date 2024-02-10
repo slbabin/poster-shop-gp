@@ -26,8 +26,8 @@
 
 
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <!-- <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
@@ -36,6 +36,19 @@
                 <a href="" class="dropdown-item">Clearance</a>
                 <a href="" class="dropdown-item">All Specials</a>
             </div>
+        </li> -->
+
+        <li>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'about' %}" id="specials-link" aria-haspopup="true" aria-expanded="false">
+                About Us
+            </a>
+            
+        </li>
+        <li>
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" id="specials-link" aria-haspopup="true" aria-expanded="false">
+                Contact
+            </a>
+            
         </li>
     </ul>
 </div>

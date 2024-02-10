@@ -5,39 +5,41 @@
 <html lang="en">
 
 <head>
-  {% block meta %}
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  {% endblock %}
+    {% block meta %}
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% endblock %}
 
-  {% block corecss %}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}">
-  <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
-  {% endblock %}
+    {% block corecss %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    {% endblock %}
 
-  {% block corejs %}
-  <script src="https://kit.fontawesome.com/156132a4a3.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="https://js.stripe.com/v3/"></script>
-  {% endblock %}
+    {% block corejs %}
+    <script src="https://kit.fontawesome.com/156132a4a3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://js.stripe.com/v3/"></script>
+    {% endblock %}
 
 
-  <title>The Poster shop {% block extra_title %} {% endblock %}</title>
+    <title>The Poster shop {% block extra_title %} {% endblock %}</title>
 </head>
 
 <body>
- <header class="container-fluid fixed-top ">
+    <header class="container-fluid fixed-top ">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
@@ -47,7 +49,8 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'posters' %}">
                     <div class="input-group w-100">
-                        <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                        <input class="form-control border border-black rounded-0" type="text" name="q"
+                            placeholder="Search our site">
                         <div class="input-group-append">
                             <button class="form-control btn btn-black border border-black rounded-0" type="submit">
                                 <span class="icon">
@@ -61,7 +64,8 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-user-large"></i></div>
                                 <p class="my-0">My Account</p>
@@ -69,26 +73,27 @@
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                    <a href="{% url 'add_poster' %}" class="dropdown-item">Poster Management</a>
-                                {% endif %}
-                                <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                            {% if request.user.is_superuser %}
+                            <a href="{% url 'add_poster' %}" class="dropdown-item">Poster Management</a>
+                            {% endif %}
+                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
-                                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}
                         </div>
                     </li>
                     <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                            href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fa-solid fa-basket-shopping"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
+                                    ${{ grand_total|floatformat:2 }}
                                     {% else %}
-                                        $0.00
+                                    $0.00
                                     {% endif %}
                                 </p>
                             </div>
@@ -99,7 +104,8 @@
         </div>
         <div class="row bg-white">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 {% include 'includes/mobile-top-header.html' %}
@@ -111,96 +117,91 @@
     {% if messages %}
     <div class="message-container" id="msg">
         {% for message in messages %}
-            {% with message.level as level %}
-                {% if level == 40 %}
-                    {% include 'includes/toasts/toast_error.html' %}
-                {% elif level == 30 %}
-                    {% include 'includes/toasts/toast_warning.html' %}
-                {% elif level == 25 %}
-                    {% include 'includes/toasts/toast_success.html' %}
-                {% else %}
-                    {% include 'includes/toasts/toast_info.html' %}
-                {% endif %}
-            {% endwith %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'includes/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'includes/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'includes/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'includes/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
         {% endfor %}
     </div>
     {% endif %}
 
-    
 
-  {% block page_header %}
-  {% endblock %}
 
-  {% block content %}
-  {% endblock %}
+    {% block page_header %}
+    {% endblock %}
 
-  <footer class="footer-dark mt-5">
-    <div class="container">
-        <div class="row d-flex justify-content-center">
-            <div class="col col-md-2 m-3 item">
-            <h3>Category</h3>
-                <ul>
-                    <li><a href="{% url 'posters' %}?category=Sport">Sport</a></li>
-                    <li><a href="{% url 'posters' %}?category=Vintage war posters">Vintage</a></li>
-                    <li><a href="{% url 'posters' %}?category=Cinema">Cinema</a></li>
-                    <li><a href="{% url 'posters' %}?category=Sport,Vintage war posters,Cinema,Retro">All categories</a></li>
-                    
-                </ul>
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer-dark mt-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col col-md-2 m-3 item">
+                    <h3>Category</h3>
+                    <ul>
+                        <li><a href="{% url 'posters' %}?category=Sport">Sport</a></li>
+                        <li><a href="{% url 'posters' %}?category=Vintage war posters">Vintage</a></li>
+                        <li><a href="{% url 'posters' %}?category=Cinema">Cinema</a></li>
+                        <li><a href="{% url 'posters' %}?category=Sport,Vintage war posters,Cinema,Retro">All
+                                categories</a></li>
+
+                    </ul>
+                </div>
+                <div class="col col-md-2 m-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="{% url 'about' %}">Company</a></li>
+                        <li><a href="{% url 'about' %}">Our Mission</a></li>
+                        <li><a href="{% url 'about' %}">Our Values</a></li>
+                        <li><a href="{% url 'contact' %}">Contact us</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col col-md-2 m-3 item">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="{% url 'faq' %}">FAQs</a></li>
+                        <li><a href="{% url 'shipping' %}">Shipping</a></li>
+                        <li><a href="{% url 'return' %}">Returns</a></li>
+                        <li><a href="{% url 'terms' %}">Terms of use</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="col col-md-2 m-3 item">
-            <h3>Support</h3>
-                <ul>
-                    <li><a href="">FAQs</a></li>
-                    <li><a href="#">Search</a></li>
-                    <li><a href="" >Download</a></li>
-                    <li><a href="#">Warranty</a></li>
-                    
-                </ul>
-            </div>
-            <div class="col col-md-2 m-3 item">
-            <h3>About</h3>
-                <ul>
-                    <li><a href="">Company</a></li>
-                    <li><a href="">Affiliate program</a></li>
-                    <li><a href="" >Join our group</a></li>
-                    <li><a href="">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="col col-md-2 m-3 item">
-            <h3>Policy</h3>
-                <ul>
-                    <li><a href="{% url 'return' %}">Return</a></li>
-                    <li><a href="{% url 'shipping' %}">Shipping</a></li>
-                    <li><a href="{% url 'return' %}">Returns</a></li>
-                    <li><a href="{% url 'terms' %}">Terms of use</a></li>
-                </ul>
-            </div>
-        </div>
 
 
-        <div class="row d-flex justify-content-center">
-            <div class="my-0 mx-auto">
-                <h4>
-                    <a href="{% url 'newsletters' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Susbscribe to our newslettes here</a>
-                </h4>
+            <div class="row d-flex justify-content-center">
+                <div class="my-0 mx-auto">
+                    <h4>
+                        <a href="{% url 'newsletters' %}"
+                            class="shop-now-button btn btn-lg rounded-2 text-uppercase py-3">Susbscribe to our
+                            newsletters here</a>
+                    </h4>
+                </div>
             </div>
-        </div>
 
-        <div class="row mt-0">
-            <div class="col mb-0 copyright">
-                <p>This site is under construction.</p>
-                <p>This site is for educational purpose only.</p>
+            <div class="row mt-0">
+                <div class="col mb-0 copyright">
+                    <p>This site is under construction.</p>
+                    <p>This site is for educational purpose only.</p>
+                </div>
             </div>
         </div>
-        </div>
 
-</footer>
+    </footer>
 
-  {% block postloadjs %}
-  <script type="text/javascript">    
-      $('.toast').toast('show');
-  </script>
-  {% endblock %}
+    {% block postloadjs %}
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
+    {% endblock %}
 
 </body>
 

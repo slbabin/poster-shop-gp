@@ -40,7 +40,7 @@
                 {% endif %}
                 {% if request.user.is_superuser %}
                     <small class="ml-2">
-                        <a href="{% url 'edit_poster' poster.id %}">Edit</a>
+                        <a class="mr-2" href="{% url 'edit_poster' poster.id %}">Edit</a>
                         <a onclick="return confirm('Are you sure want to delete this poster?');" class="text-danger" href="{% url 'delete_poster' poster.id %}">Delete</a>
                     </small>
                 {% endif %}
