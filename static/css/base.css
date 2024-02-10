@@ -22,6 +22,10 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    
+}
+.logo-red {    
+    color: #800303 !important;
 }
 
 .main-logo-link {
@@ -337,7 +341,10 @@ footer {
     margin-bottom:36px;
   }
   
-
+.social {
+    color: white;
+    font-size: 1.5em;
+}
 
 /* -------------------------------- Media Queries */
 
