@@ -1,1 +1,1 @@
-web: poster_shop.wsgi:application
+web: gunicorn poster_shop.wsgi:application
