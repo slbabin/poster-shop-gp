@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
-import sys
+import dj_database_url
 
 from pathlib import Path
 
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-o-h_zko+fj32e57c=_fctrp6sh7oeo*z-)f5qoz1rp5z05f2v!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-slbabin-postershopgp-67nll0kepo4.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['poster-shop-4968517d882f.herokuapp.com','8000-slbabin-postershopgp-67nll0kepo4.ws-eu108.gitpod.io']
 
 
 # Application definition
@@ -121,14 +121,21 @@ WSGI_APPLICATION = 'poster_shop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:  
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
-
+# DATABASES = {
+#      'default': dj_database_url.parse('postgres://lxdqfhpt:xHjaqWhUKuBoo7G9wpAjin4heIcmiOyN@lucky.db.elephantsql.com/lxdqfhpt')
+#  }
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 

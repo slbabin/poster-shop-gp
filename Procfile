@@ -1,0 +1,1 @@
+web: poster_shop.wsgi:application
