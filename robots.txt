@@ -4,4 +4,4 @@ Disallow: /accounts/
 Disallow: /basket/
 Disallow: /checkout/
 Disallow: /checkout_success/
-Sitemap: https://heroku-link/sitemap.xml
+Sitemap: https://poster-shop-4968517d882f.herokuapp.com/sitemap.xml
