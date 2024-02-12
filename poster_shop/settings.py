@@ -26,7 +26,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY','')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = 'DEVELOPMENT' in os.environ
+# DEBUG = 'DEVELOPMENT' in os.environ
+
+DEBUG = True
 
 ALLOWED_HOSTS = ['poster-shop-4968517d882f.herokuapp.com','8000-slbabin-postershopgp-67nll0kepo4.ws-eu108.gitpod.io']
 
