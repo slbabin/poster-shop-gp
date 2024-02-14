@@ -33,7 +33,6 @@ def bag_contents(request):
                     'size': size,
                 })
 
-
     free_delivery_offer = 0
     FREE_DELIVERY_THRESHOLD = 0
 

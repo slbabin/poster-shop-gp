@@ -1,22 +1,20 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
 from django.contrib import messages
-
 from products.models import Poster
 
 
 # Create your views here.
 def view_bag(request):
     """ A view to view a bug page """
-    
     return render(request, 'bag/bag.html')
+
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
 
-    product = get_object_or_404(Poster,pk=item_id)
+    product = get_object_or_404(Poster, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
-    
     size = None
 
     if 'product_size' in request.POST:
