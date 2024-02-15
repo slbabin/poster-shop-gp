@@ -146,6 +146,16 @@ a.category-badge > span.badge:hover{
     right: 36px;
 }
 
+.order-confirmation-wrapper .row{
+
+    border-bottom: 1px solid #dee2e6;
+
+}
+
+.order-info {
+    font-size: 1.5em;
+}
+
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
     border-bottom-color: #007bff !important;
@@ -366,7 +376,7 @@ footer {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 184px;
     }
 }
 
