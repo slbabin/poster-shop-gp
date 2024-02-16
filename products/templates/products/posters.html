@@ -59,11 +59,11 @@
                     <div class="card h-100 border-0">
                         {% if poster.image %}
                         <a href="{% url 'poster_detail' poster.id %}">
-                        <img src="{{poster.image.url}}" class="card-img-top img-fluid" alt="{{ poster.name }}">
+                        <img src="{{poster.image.url}}" class="card-img-top img-fluid shadow" alt="{{ poster.name }}">
                         </a>
                         {% else %}
                         <a href="{% url 'poster_detail' poster.id %}">
-                            <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top img-fluid" alt="{{ poster.name }}">
+                            <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top img-fluid shadow" alt="{{ poster.name }}">
                             </a>
                         {% endif %}
                         <div class="card-body pb-0">

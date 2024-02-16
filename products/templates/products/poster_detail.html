@@ -18,11 +18,11 @@
             <div class="image-container my-5">
                 {% if poster.image %}
                 <a href="{{poster.image.url}}" target="_blank">
-                    <img src="{{poster.image.url}}" class="card-img-top img-fluid" alt="{{ poster.name }}">
+                    <img src="{{poster.image.url}}" class="card-img-top img-fluid shadow-lg" alt="{{ poster.name }}">
                 </a>
                 {% else %}
                 <a href="">
-                    <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top img-fluid" alt="{{ poster.name }}">
+                    <img src="{{ MEDIA_URL }}noimage.png" class="card-img-top img-fluid shadow-lg" alt="{{ poster.name }}">
                 </a>
                 {% endif %}
             </div>

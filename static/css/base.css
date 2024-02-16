@@ -389,5 +389,13 @@ footer {
     body {
         height: calc(100vh - 100px);
     }
+
+    .logo-font{
+        font-size: 1.8em;
+    
+    }
+    .shop-now-button {        
+        min-width: 100%;
+    }
 }
 
