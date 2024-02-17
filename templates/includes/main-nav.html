@@ -1,51 +1,38 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 hover-link" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Posters
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'posters' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'posters' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'posters' %}" class="dropdown-item">All Posters</a>
+                <a href="{% url 'posters' %}?sort=price&direction=asc" class="dropdown-item hover-link">By Price</a>
+                <a href="{% url 'posters' %}?sort=category&direction=asc" class="dropdown-item hover-link">By Category</a>
+                <a href="{% url 'posters' %}" class="dropdown-item hover-link">All Posters</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 hover-link" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Poster Category
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'posters' %}?category=Sport" class="dropdown-item">Sport</a>
-                <a href="{% url 'posters' %}?category=Vintage war posters" class="dropdown-item">Vintage war posters</a>
-                <a href="{% url 'posters' %}?category=Cinema" class="dropdown-item">Cinema</a>
-                <a href="{% url 'posters' %}?category=Retro" class="dropdown-item">Retro</a>
-                <a href="{% url 'posters' %}?category=Sport,Vintage war posters,Cinema,Retro" class="dropdown-item">All categories</a>
+                <a href="{% url 'posters' %}?category=Sport" class="dropdown-item hover-link">Sport</a>
+                <a href="{% url 'posters' %}?category=Vintage war posters" class="dropdown-item hover-link">Vintage war posters</a>
+                <a href="{% url 'posters' %}?category=Cinema" class="dropdown-item hover-link">Cinema</a>
+                <a href="{% url 'posters' %}?category=Retro" class="dropdown-item hover-link">Retro</a>
+                <a href="{% url 'posters' %}?category=Sport,Vintage war posters,Cinema,Retro" class="dropdown-item hover-link">All categories</a>
             </div>
         </li>
 
 
-
-        <!-- <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
-            </div>
-        </li> -->
-
         <li>
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'about' %}" id="specials-link" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 hover-link {% if request.resolver_match.url_name == 'about' %}active-link{% endif %}" href="{% url 'about' %}" id="specials-link" aria-haspopup="true" aria-expanded="false">
                 About Us
             </a>
             
         </li>
         <li>
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'contact' %}" id="specials-link" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5 hover-link {% if request.resolver_match.url_name == 'contact' %}active-link{% endif %}" href="{% url 'contact' %}" id="specials-link" aria-haspopup="true" aria-expanded="false">
                 Contact
             </a>
             

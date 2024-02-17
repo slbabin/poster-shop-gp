@@ -284,6 +284,13 @@ input[name='q']::placeholder {
     margin-bottom: 5px;
 }
 
+.active-link {
+    color: #800303 !important;
+}
+.hover-link:hover {
+    color: #800303 !important;
+}
+
 /* ----------------------------------- Footer */
 footer {
     padding:50px 0;
