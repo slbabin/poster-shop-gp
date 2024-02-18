@@ -135,7 +135,7 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
 - Site Navagation 
   - The site havigation is added in the header of the site and consists of three sections - the main menu bar centered horizontally, the members area, and search bar. The search field is placed in the center of page just above the main menu bar. The members area is placed in the top right corner of the page for optimizing visibility, accessibility, and user experience, contributing to a smoother and more intuitive browsing experience for users.
 
-  - The site logo was placed on the top left side of the navigation bar which optimizes brand recognition, navigation flow, consistency, and space efficiency, contributing to a positive user experience and reinforcing the website's identity.
+  - The site logo was placed on the top left side of the navigation bar which optimizes brand recognition, navigation flow, consistency, and space efficiency, contributing to a positive user experience and reinforcing the website's identity. The Logo image is linked to the home page, clicking on it will bring the user back to the home page from any other page.
 
   - The site basket is located in the top right corner of the navigation bar. Placing the site basket in the top right corner of the navigation bar maximizes visibility, accessibility, and usability, while also maintaining consistency with established navigation patterns and user expectations.
 
@@ -144,3 +144,7 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
   - On smaller screens the search is collapced into a search icon clicking on which reveals full search bar in the dropdown.
 
   - Links in the navigation menu have visual cues, with the hover over color change. On About us and Contact pages different color or the menue item indicates current page location.
+
+ - Navigation links include filtering by different parametres such as By Price, By Category, and All Posters. 
+
+   ![Main site navigation bar](docs/images/navigation-bar.png)

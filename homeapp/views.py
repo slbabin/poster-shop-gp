@@ -21,10 +21,10 @@ def about(request):
     return render(request, 'homeapp/about-company.html')
 
 
-def returnpolicy (request):
-    """ A view to return return page  """
+def privacypolicy (request):
+    """ A view to return privacy policy page  """
     
-    return render(request, 'homeapp/return.html')
+    return render(request, 'homeapp/privacy.html')
 
 
 def contact (request):
