@@ -63,7 +63,7 @@ User stories are a great way to define the functionality and features of a ecomm
 
 # Wireframes 
 
-Wireframes provide a visual representation of the site's layout and structure, making it easier to conceptualize and understand the overall design and functionality. 
+Wireframes provide a visual representation of the site's layout and structure, making it easier to conceptualize and understand the overall design and functionality. Wireframe mockups were created using MockFlow - online wireframing and product design tool. 
 
 <details>
     <summary>Start Page</summary>  
@@ -152,6 +152,118 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
 
 
 
-- Home page
+- Home Page
 
-   - The Home page is the main entry page to the site. It intuitively shows the site visiton what the site is about via the page background and the jumbotron containing very short intro and the click to action button.  
+   - The Home page is the main entry page to the site. It intuitively shows the site visiton what the site is about via the page background and the jumbotron containing short intro text and the click to action button.  
+
+    ![Site's home page screenshot](docs/images/index-page.png)
+
+- Posters Page
+
+   - This page displays a list of all posters. The user can use filters and search queries to filter the list to their desired result.
+        - Poster Cards - The poster cards display the posters listed on the site. The information shown on each card is the poster's image, title, price, category and artist.
+        - Responsive behaviour - Poster cards will display different amount of columns depending on the viewed screen size. 
+        - Sort By Selector - This selector allows the user to order the products displayed by title, price and category in both ascending and descending orders.
+        - Products Home Link - There is a link to bring the user back to the 'Products Home', this will display all products rather than filtering by category or search queries.
+        - Search Results/Product Counter - Right next to the link to the 'Products Home' is a counter that tells the user how many products are displayed on the page. If the user has entered a search query, the counter will advise how many products were found for that specific search query.
+        - Update/Delete Links - These links are located below a poster card and appear only to the authorised user. They allow to manage posters from the front end of the site instead of log in into the admin dashboard. Clicking on the Delete button triggers the alert message asking for confirmation of the delete action. 
+   
+ ![Site's home page screenshot](docs/images/posters-page.png)
+
+- Posters Detail Page
+
+   - The poster detail page will render the information for the chosen product and allow the user to select a size and add the item to the shopping bag:
+
+        - Poster Details - This is a dynamic page that will display the selected poster's image, title, price, category, descriptiona and artist.
+        - Size Selector - The size selector can be used to select the specific size the user wants to purchase.
+        - Add to Bag Button - Below the size selector there is the Add to Bag button which allows the user to add the desired product and size to their shopping basket for purchasing.       
+        - Keep Shopping Button - After the user added the desired poster to the shopping basket, they have the option to continue shopping by clicking on the Keep shopping button which is located next to the Add to bag button. 
+        - Update/Delete Links - The poster detail page also provided the ability to manage posters from the front end to the authorized user.
+
+        ![Site's home page screenshot](docs/images/poster-detail-page.png)
+
+
+- Shopping Bag Page
+
+   - This page allows the user to view, edit and delete items in their shopping bag before proceeding to the checkout screen.
+
+       - Poster Information - This feature displays the information of each poster added to the shopping bag. This includes the poster image, title, price, size, quantity. On the page, separate entries are displayed for each size of an individual poster, indicating the quantity available for each size variant of the item.
+       - Update/Remove Buttons - These features allow the user to update the quantity of posters in their shopping bag, or remove it entirely. 
+       - Updated Total, Shipping and Grand Total - The total cost of the shopping bag updates each time an item is added, updated or removed from the shopping bag. If the user spends more than €50.00 on items, they qualify for free shipping. Otherwise, shipping is calculated to be 10% of the user's total cost, which is then added to create the grand total.
+
+       ![Site's home page screenshot](docs/images/shopping-bag.png)
+
+- Checkout Page
+
+   - The checkout page is where the user will input their delivery and payment details in order to complete the purchase.
+
+        - Shipping Info Form - This feature allows the user to enter the shipping details they wish their items to be delivered to. These details are then displayed on the confirmation screen.
+        - Order Summary - This feature allows the user to take one more look at the items in their shopping bag and the total cost before paying and submitting their order.
+        - Stripe Payment Feature - This feature allows the user to securely submit their payment information to the Stripe payment system, securing the placement of their order.
+        - Save delivery information - This checkbox on a checkout form is  used to offer users the option to save their shipping information for future purchases or account management.
+        - Loading spinner - Upon clicking "Complete Order," a friendly loading spinner will appear, signaling that the payment is undergoing processing by the backend code and the Stripe API.
+
+      ![Site's home page screenshot](docs/images/checkout-page.png)
+
+
+- Order Confirmation
+
+    - This page shows the order details of the purchase that was just carried out.
+        - Order summary - The order summary page provides a comprehensive overview of the customer's purchase. A unique order number is also provided.
+        - Return To Store Button - This button brings the user back to the store where they can continue to browsing posters on offer.
+        
+     ![Site's home page screenshot](docs/images/order-confirmation.png) 
+
+- Profile Page 
+
+    - The profile page shows the user their saved profile and delivery information and their order history.
+        - User's Profile Heading - The heading of the profile page updates to the user's chosen username.
+        - Order History Log - This feature is a list of past orders placed while logged in. There are links on each order which allows the user to go to the order history page to get a detailed view of the order placed.
+
+
+    ![Site's home page screenshot](docs/images/profile-page.png)
+
+- Poster Management Page 
+
+    - This page allows the authenticated users with superuser privileges to manage posters from the front end of the store without login into the Django admin page. 
+
+        - Add Poster Form - The Add poster form allows the authenticated user a new poster to the store stock.
+        - Edit Poster Form - The Edit poster form allows authenticated user to editor currently listed on the store posters. To access the edit form, the user needs to click on the Edit link under the poster card. 
+
+    ![Site's home page screenshot](docs/images/poster-management-page.png)
+
+
+- Delete Poster
+
+    - The delete poster option allows authenticated users with superuser privileges to delete an existing poster from the store. Clicking on the Delete button triggers the alert message asking to confirm the deletion. 
+    
+    ![Site's home page screenshot](docs/images/delete-confirmation.png)
+
+
+- Form errors
+
+   - Every form on the site dispays a warning message on the incorrect input. Displaying errors on a form is essential for providing feedback to users when they input incorrect or incomplete information. 
+
+   ![Site's home page screenshot](docs/images/form-errors.png)
+
+
+- Contact us
+
+    - The contact us page allows the user should they have any question, concern or suggestion, to contact the site's admin.
+
+    ![Site's home page screenshot](docs/images/contact-form.png)
+
+- Newsletter
+
+    - The newsletter page allows the user to subscribe to the site's newsletter. Newsletters allow websites to stay connected with their audience by providing regular updates, announcements, and curated content. This engagement helps maintain interest in the site and encourages visitors to return.
+
+    ![Site's home page screenshot](docs/images/newsletter-form.png) 
+
+
+- Messages
+
+    - Toast messages - Toast messages, also known as toast notifications, are small, transient messages that appear temporarily on a website or application to provide users with important feedback, updates, or alerts. 
+    
+    - Every time a user completes an action on the site such as register, login, logout, add, update, or delete a poster and other actions a relevant message will be displayed at the top of the screen to inform the user about the action being completed successfully.    
+
+    ![Site's home page screenshot](docs/images/404-error.png)        

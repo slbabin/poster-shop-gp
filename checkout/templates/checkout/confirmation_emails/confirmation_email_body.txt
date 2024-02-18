@@ -5,9 +5,9 @@ Please find your order details below:
 Order Number: {{ order.order_nuid }}
 Order Date: {{ order.date }}
 
-Order Total: ${{ order.order_total }}
-Delivery: ${{ order.delivery_price }}
-Grand Total: ${{ order.grand_total }}
+Order Total: €{{ order.order_total }}
+Delivery: €{{ order.delivery_price }}
+Grand Total: €{{ order.grand_total }}
 
 We will deliver your order to {{ order.street_address1 }} in {{ order.city }}, {{ order.country }}.
 

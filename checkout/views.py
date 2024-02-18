@@ -65,7 +65,7 @@ def checkout(request):
                     if isinstance(item_data, int):
                         order_line_item = OrderItem(
                             order=order,
-                            product=product,
+                            poster=product,
                             quantity=item_data,
                         )
                         order_line_item.save()
