@@ -148,3 +148,10 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
  - Navigation links include filtering by different parametres such as By Price, By Category, and All Posters. 
 
    ![Main site navigation bar](docs/images/navigation-bar.png)
+
+
+
+
+- Home page
+
+   - The Home page is the main entry page to the site. It intuitively shows the site visiton what the site is about via the page background and the jumbotron containing very short intro and the click to action button.  
