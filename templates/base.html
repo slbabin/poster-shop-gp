@@ -11,6 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/x-icon" href="{{ MEDIA_URL }}favicon.ico">
+
+    <meta name="description" content="Transform your space with timeless charm from Poster Shop. Explore our curated collection of vintage and retro posters, 
+        spanning classic movie memorabilia, nostalgic travel scenes, and iconic art deco designs. Elevate your decor with our authentic posters, 
+        perfect for adding a touch of vintage flair to any room. Shop now and discover your next statement piece!">
+    <meta name="keywords" content="Vintage posters, Retro posters, Vintage artwork, Retro aesthetics, Classic posters, Antique posters, Poster prints, 
+        Movie posters, Travel posters, Art deco posters, Music posters, Collectible posters, Nostalgic posters, Vintage decor, Retro decor, 
+        Wall art, Home decor, Interior design, Vintage-inspired art, Unique posters">
     {% endblock %}
 
     {% block corecss %}
@@ -37,7 +44,7 @@
     {% endblock %}
 
 
-    <title>The Poster shop {% block extra_title %} {% endblock %}</title>
+    <title> The Poster shop {% block extra_title %}{% endblock %}</title>
 </head>
 
 <body>
@@ -46,16 +53,18 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <!-- <h2 class="logo-font my-0 logo-red"><strong>Poster</strong> Shop</h2> -->
-                    <h2 class="logo-font my-0 logo-red"> <img src="{{ MEDIA_URL }}poster-shop-logo.jpg" alt="Poster shop, vintage poster"></h2>
+                    <h2 class="logo-font my-0 logo-red"> <img src="{{ MEDIA_URL }}poster-shop-logo.jpg"
+                            alt="Poster shop, vintage poster"></h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <form method="GET" action="{% url 'posters' %}">
                     <div class="input-group w-100">
                         <input class="form-control border border-black rounded-0" type="text" name="q"
-                            placeholder="Search our site">
+                            placeholder="Search our site" aria-label="search bar">
                         <div class="input-group-append">
-                            <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                            <button class="form-control btn btn-black border border-black rounded-0" type="submit"
+                                aria-label="Search button">
                                 <span class="icon">
                                     <i class="fas fa-search"></i>
                                 </span>
@@ -149,10 +158,14 @@
                 <div class="col col-md-2 m-3 item">
                     <h3>Category</h3>
                     <ul>
-                        <li><a href="{% url 'posters' %}?category=Sport">Sport</a></li>
-                        <li><a href="{% url 'posters' %}?category=Vintage war posters">Vintage</a></li>
-                        <li><a href="{% url 'posters' %}?category=Cinema">Cinema</a></li>
-                        <li><a href="{% url 'posters' %}?category=Sport,Vintage war posters,Cinema,Retro">All
+                        <li><a href="{% url 'posters' %}?category=Sport"
+                                aria-label="takes user to sport posters">Sport</a></li>
+                        <li><a href="{% url 'posters' %}?category=Vintage war posters"
+                                aria-label="takes user to vintage war posters">Vintage</a></li>
+                        <li><a href="{% url 'posters' %}?category=Cinema"
+                                aria-label="takes user to cinema posters">Cinema</a></li>
+                        <li><a href="{% url 'posters' %}?category=Sport,Vintage war posters,Cinema,Retro"
+                                aria-label="takes user to cinema, vintage war, and retro posters">All
                                 categories</a></li>
 
                     </ul>
@@ -160,10 +173,14 @@
                 <div class="col col-md-2 m-3 item">
                     <h3>About</h3>
                     <ul>
-                        <li><a href="{% url 'about' %}">Company</a></li>
-                        <li><a href="{% url 'about' %}#our-mission">Our Mission</a></li>
-                        <li><a href="{% url 'about' %}#our-values">Our Values</a></li>
-                        <li><a href="{% url 'faq' %}">FAQs</a></li>
+                        <li><a href="{% url 'about' %}" aria-label="takes user to About comany page">Company</a></li>
+                        <li><a href="{% url 'about' %}#our-mission"
+                                aria-label="Takes user to Our missing section on the about company page">Our Mission</a>
+                        </li>
+                        <li><a href="{% url 'about' %}#our-values"
+                                aria-label="Takes user to Our Values section on the about company page">Our Values</a>
+                        </li>
+                        <li><a href="{% url 'faq' %}" aria-label="Takes user to the FAQ page">FAQs</a></li>
                     </ul>
                 </div>
 
@@ -171,10 +188,13 @@
                 <div class="col col-md-2 m-3 item">
                     <h3>Support</h3>
                     <ul>
-                        <li><a href="{% url 'contact' %}">Contact Us</a></li>
-                        <li><a href="{% url 'shipping' %}">Shipping & Returns</a></li>
-                        <li><a href="{% url 'privacy' %}">Privacy Policy</a></li>
-                        <li><a href="{% url 'terms' %}">Terms of use</a></li>
+                        <li><a href="{% url 'contact' %}" aria-label="Takes user to the Contact page">Contact Us</a>
+                        </li>
+                        <li><a href="{% url 'shipping' %}" aria-label="Takes user to the Shipping page">Shipping &
+                                Returns</a></li>
+                        <li><a href="{% url 'privacy' %}" aria-label="Takes user to the Policy page">Privacy Policy</a>
+                        </li>
+                        <li><a href="{% url 'terms' %}" aria-label="Takes user to the Terms page">Terms of use</a></li>
                     </ul>
                 </div>
             </div>
@@ -184,20 +204,22 @@
                 <div class="my-0 mx-auto">
                     <h4>
                         <a href="{% url 'newsletters' %}"
-                            class="shop-now-button btn btn-lg rounded-2 text-uppercase py-3">Susbscribe to our
+                            class="shop-now-button btn btn-lg rounded-2 text-uppercase py-3"
+                            aria-label="Redirect user to the newsletters form">Susbscribe to our
                             newsletters here</a>
                     </h4>
                 </div>
             </div>
 
             <div class="row row d-flex justify-content-center">
-                <a class="mr-5 social" href="https://www.facebook.com/profile.php?id=61556557442641" target="_blank" rel="external"
-                  aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa fa-facebook"></i></a>
+                <a class="mr-5 social" href="https://www.facebook.com/profile.php?id=61556557442641" target="_blank"
+                    rel="external" aria-label="Visit our Facebook page (opens in a new tab)"><i
+                        class="fa fa-facebook"></i></a>
                 <a class="mr-5 social" href="https://www.instagram.com/" target="_blank" rel="external"
-                  aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa fa-instagram"></i></a>                
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fa fa-instagram"></i></a>
                 <a class="mr-5 social" href="https://github.com/slbabin/" target="_blank" rel="external"
-                  aria-label="Visit our Twiter page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
-              </div>
+                    aria-label="Visit our Twiter page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
+            </div>
 
             <div class="row mt-0">
                 <div class="col mb-0 copyright">
