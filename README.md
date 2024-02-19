@@ -371,3 +371,13 @@ For the HTML code validation it was used the [HTML W3C Validator](https://valida
 | Order history page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fprofile%2Forder_history%2F282FCCEC776149C5833165520A5B09E5) | ![screenshot](docs/images/order-history-page-html-validation.png |    |
 | Order history page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fabout%2F) | ![screenshot](docs/images/about-page-html-validation.png) |    |
 
+
+
+### CSS
+
+The [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) was used to validate CSS files for this project.
+
+| Page | Jigsaw URL |  Screenshot | Notes |
+| --- | --- | --- | --- |
+| base.css | [URL](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fposter-shop.s3.amazonaws.com%2Fstatic%2Fcss%2Fbase.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](docs/images/base-css.png) | Six warning related to a vendor extension and same color for background and border |
+| checkout.css | [URL](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fposter-shop.s3.amazonaws.com%2Fstatic%2Fcheckout%2Fcss%2Fcheckout.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](docs/images/checkout-css.png) |    |
