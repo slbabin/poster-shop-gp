@@ -266,4 +266,36 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
     
     - Every time a user completes an action on the site such as register, login, logout, add, update, or delete a poster and other actions a relevant message will be displayed at the top of the screen to inform the user about the action being completed successfully.    
 
-    ![Site's home page screenshot](docs/images/404-error.png)        
+    ![Site's home page screenshot](docs/images/404-error.png)
+
+
+- Back to Top Button
+    
+    - Adding a "back to top" button on a website enhances user experience by providing a convenient way for users to quickly navigate to the top of the page, improving accessibility, mobile usability, time efficiency, and overall navigation convenience.   
+
+    ![Site's home page screenshot](docs/images/back-to-top-button.png)
+
+
+- Footer
+    
+    - Each page of the site features a consistent responsive footer design. 
+
+    - Footer was split into three columns. Including navigational links in the footer with three columns enhances website usability by organizing content effectively, providing users with easy access to important pages, improving navigation efficiency, and optimizing space utilization, thereby enhancing overall user experience.
+
+    - Links to social media such as Facebook, Instagram, and GitHub proflie.
+
+    - The footer contains the Subscribe to Newsletters button, clickin on which opens a dedicated page with the subscribe form.
+
+    ![Site's home page screenshot](docs/images/footer.png) 
+
+- Database Diagram
+    
+    - Database diagram for this project was created using online tool [https://dbdiagram.io](https://dbdiagram.io). A diagram provides a clear visual representation of the database structure, including tables, fields, and relationships between different models. 
+
+    ![Site's home page screenshot](docs/images/diagram.png)
+
+
+- Agile Methodologies
+    
+    - Github Projects was used to keep track of the User Stories and progress of the prject. 
+    - The link to the project is located [here](https://github.com/users/slbabin/projects/6/views/1). 
