@@ -357,4 +357,4 @@ For the HTML code validation it was used the [HTML W3C Validator](https://valida
 | --- | --- | --- | --- |
 | Index/Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2F) | ![screenshot](docs/images/index-page-html-validation.png) |   |
 | Posters page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fposters%2F) | ![screenshot](docs/images/posters-page-html-validation.png) |    |
-| Posters page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fposters%2F) | ![screenshot](docs/images/posters-page-html-validation.png) |    |
+| Poster detail page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fposters%2F2%2F) | ![screenshot](docs/images/poster-detail-page-html-validation.png) |    |
