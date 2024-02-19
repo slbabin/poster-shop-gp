@@ -363,4 +363,11 @@ For the HTML code validation it was used the [HTML W3C Validator](https://valida
 | Login page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](docs/images/login-page-html-validation.png) |    |
 | Profile page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fprofile%2FF) | ![screenshot](docs/images/profile-page-html-validation.png) |  No error or warning, just notification about trailing slash on void elements has no effect.  |
 | Add poster page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fposters%2Fadd%2F) | ![screenshot](docs/images/profile-page-html-validation.png) |  No error or warning, just notification about trailing slash on void elements has no effect.  |
+| Checkout page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fcheckout%2F) | ![screenshot](docs/images/checkout-page-html-validation.png) |    |
+| Checkout success page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fcheckout%2Fcheckout_success) | ![screenshot](docs/images/checkout-success-page-html-validation.png) |    |
 | Contact page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fcontact%2F) | ![screenshot](docs/images/contact-page-html-validation.png) |    |
+| Newsletter subscribe page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fnewsletters%2F) | ![screenshot](docs/images/newsletter-page.png) |    |
+| About page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fabout%2F) | ![screenshot](docs/images/about-page-html-validation.png) |    |
+| Order history page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fprofile%2Forder_history%2F282FCCEC776149C5833165520A5B09E5) | ![screenshot](docs/images/order-history-page-html-validation.png |    |
+| Order history page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fabout%2F) | ![screenshot](docs/images/about-page-html-validation.png) |    |
+
