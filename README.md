@@ -288,14 +288,61 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
 
     ![Site's home page screenshot](docs/images/footer.png) 
 
-- Database Diagram
+ 
+
+## Database Diagram
     
     - Database diagram for this project was created using online tool [https://dbdiagram.io](https://dbdiagram.io). A diagram provides a clear visual representation of the database structure, including tables, fields, and relationships between different models. 
 
     ![Site's home page screenshot](docs/images/diagram.png)
 
 
-- Agile Methodologies
+## Agile Methodologies
     
     - Github Projects was used to keep track of the User Stories and progress of the prject. 
     - The link to the project is located [here](https://github.com/users/slbabin/projects/6/views/1). 
+
+
+## Bussniess model & Marketing
+
+### Business Model:
+
+The business model for the Poster Shop website  follow an e-commerce model, focusing on curating and selling a wide variety of vintage and retro posters to customers worldwide. Here's a breakdown of the key components: 
+  - **Product Curation:** Curate a diverse collection of vintage and retro posters spanning various themes such as movie posters, travel posters, art deco, music, and more. Ensure high-quality images and accurate descriptions for each poster.
+
+  - **Inventory Management:** Maintain an organized inventory system to track available posters, manage stock levels, and update listings promptly. Regularly source new posters to keep the collection fresh and appealing to customers.
+
+  - **E-commerce Platform:** Set up a user-friendly e-commerce website where customers can easily browse, search, and purchase posters. Implement secure payment gateways to facilitate smooth transactions.
+
+  - **Shipping and Fulfillment:** Partner with reliable shipping carriers to offer worldwide shipping options. Implement efficient fulfillment processes to ensure orders are processed promptly and posters are securely packaged for delivery.
+
+  - **Customer Service:** Provide excellent customer service by promptly addressing inquiries, resolving issues, and ensuring customer satisfaction. Implement a returns and refunds policy to offer peace of mind to customers.
+
+
+### Marketing Strategy:
+
+To effectively market the online vintage and retro poster website and attract customers, the following marketing strategy incorporating channels have been adopted:
+
+- **Search Engine Optimization (SEO):** Optimized the website for relevant keywords related to vintage and retro posters to improve visibility in search engine results pages (SERPs).
+
+- **Email Marketing:** Created a newsletters subscribe form in order to build email list of customers and prospects and send out regular newsletters featuring new arrivals, special promotions, and exclusive discounts. Can personalize email content to cater to the interests of different segments of subscribers.
+
+- **Social Media Marketing:** Utilized popular social media platforms such as Facebook to showcase posters, engage with followers, and run targeted advertising campaigns to reach potential customers. 
+
+![Site's home page screenshot](docs/images/Facebook-business-page.png) 
+
+The following marketing strategies can be implemented in the future incorporating various online and offline channels:
+
+- **Content Marketing:** Create engaging blog posts, articles, and guides related to vintage posters, retro aesthetics, poster collecting tips, etc., to attract and engage the target audience. Share this content on social media and other platforms to drive traffic to the website.
+
+- **Social Media Marketing:** Utilize other popular social media platforms such as Instagram, Facebook, Pinterest, and Twitter to showcase posters, engage with followers, and run targeted advertising campaigns to reach potential customers.
+
+- **Influencer Partnerships:** Collaborate with influencers, bloggers, and content creators in the vintage, retro, and interior design niches to showcase posters, gain exposure to their audiences, and drive traffic to the website.
+
+- **Affiliate Marketing:** Set up an affiliate program where bloggers, influencers, and other partners can earn commissions for referring customers to the website. Provide them with marketing materials and tracking tools to facilitate promotion and tracking of referrals.
+
+
+By implementing a robust business model and executing a comprehensive marketing strategy, the online vintage and retro poster website can effectively attract customers, drive sales, and establish itself as a premier destination for vintage poster enthusiasts.
+
+## Testing
+
