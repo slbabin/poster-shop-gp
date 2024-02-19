@@ -348,3 +348,15 @@ By implementing a robust business model and executing a comprehensive marketing 
 
 ### Code Validation
 
+This section displays code validations for this project. 
+
+### HTML
+For the HTML code validation it was used the [HTML W3C Validator](https://validator.w3.org) to validate HTML files.
+
+| Page | W3C URL |  Screenshot | Notes |
+| --- | --- | --- | --- |
+| Index/Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2F) | ![screenshot](docs/images/index-page-html-validation.png) | 
+. |
+
+| Index/Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2F) | ![screenshot](docs/images/index-page-html-validation.png) | 
+. |
