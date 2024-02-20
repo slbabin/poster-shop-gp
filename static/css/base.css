@@ -35,7 +35,7 @@ body {
 .hero-txt{
     position: absolute;
     right: 50px;
-    top: 308px;
+    top: 250px;
     background-color: #e3e2e0;
     padding: 30px;
     opacity: 0.95;
@@ -398,7 +398,7 @@ footer {
     }
 
     .logo-font{
-        font-size: 1.8em;
+        font-size: 1.7em;
     
     }
     .shop-now-button {        
