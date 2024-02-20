@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY','ljalsa;f;ad;fj')
+SECRET_KEY = os.environ.get('SECRET_KEY', 'sdfsfa')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY','ljalsa;f;ad;fj')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['poster-shop-4968517d882f.herokuapp.com','8000-slbabin-postershopgp-67nll0kepo4.ws-eu108.gitpod.io']
-
+ALLOWED_HOSTS = ['poster-shop-4968517d882f.herokuapp.com',
+                 '8000-slbabin-postershopgp-67nll0kepo4.ws-eu108.gitpod.io']
 
 # Application definition
 
@@ -129,7 +129,7 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-else:  
+else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
@@ -137,24 +137,19 @@ else:
         }
     }
 
-# DATABASES = {
-#      'default': dj_database_url.parse('postgres://lxdqfhpt:xHjaqWhUKuBoo7G9wpAjin4heIcmiOyN@lucky.db.elephantsql.com/lxdqfhpt')
-#  }
-# Password validation
-# https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',  # noqa
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',  # noqa
     },
 ]
 
@@ -195,7 +190,6 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
 
-
     # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
@@ -212,7 +206,7 @@ if 'USE_AWS' in os.environ:
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#Stripe settins
+# Stripe settins
 FREE_DELIVERY_THRESHOLD = 50
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'eur'

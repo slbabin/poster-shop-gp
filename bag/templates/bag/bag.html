@@ -151,11 +151,11 @@
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script>
-    // Update quantity on click
-    $('.update-link').click(function (e) {
+// Update quantity on click
+$('.update-link').click(function (e) {
         var form = $(this).prev('.update-form');
         form.submit();
-    })
+    });
 
     // Remove item and reload on click
     $('.remove-item').click(function (e) {
@@ -172,6 +172,6 @@
             .done(function () {
                 location.reload();
             });
-    })
+    });
 </script>
 {% endblock %}

@@ -381,3 +381,53 @@ The [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) was used to vali
 | --- | --- | --- | --- |
 | base.css | [URL](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fposter-shop.s3.amazonaws.com%2Fstatic%2Fcss%2Fbase.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](docs/images/base-css.png) | Six warning related to a vendor extension and same color for background and border |
 | checkout.css | [URL](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fposter-shop.s3.amazonaws.com%2Fstatic%2Fcheckout%2Fcss%2Fcheckout.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](docs/images/checkout-css.png) |    |
+
+
+### JavaScript
+
+The [JShint Validator ](https://jshint.com/) was used to validate JS files for this project.
+
+| Page | Screenshot | Notes |
+| --- | --- | --- |
+| stripe_elements.js  | ![screenshot](docs/images/stripe_elements_js.png) | Warning about undefined Stripe variable |
+| countryfield.js  | ![screenshot](docs/images/countryfield-js.png) | No issues |
+| Update quantity in a bag script  | ![screenshot](docs/images/update-quantity-script.png) | No issues |
+| Quantity input script  | ![screenshot](docs/images/quantity_input-script.png) | No issues |
+| Add/edit poster js  | ![screenshot](docs/images/add-poster-js.png) | No issues |
+| Poster sort js  | ![screenshot](docs/images/posters-sort-js.png) | No issues |
+
+
+### Python
+
+Python files were validated using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/).
+
+| Page | Screenshot | Notes |
+| --- | --- | --- |
+| setting.py  | ![screenshot](docs/images/setting-py.png) | Were getting E501 line too long errors. I had to add # noqa where lines of code could not be broken. |
+| Products admin.py  | ![screenshot](docs/images/products-admin-py.png) | All clear |
+| Products forms.py  | ![screenshot](docs/images/products-form-py.png) | All clear |
+| Products models.py  | ![screenshot](docs/images/products-models-py.png) | All clear |
+| Products urls.py  | ![screenshot](docs/images/products-urls-py.png) | All clear |
+| Products views.py  | ![screenshot](docs/images/products-views-py.png) | All clear |
+| Products widgets.py  | ![screenshot](docs/images/products-widget-py.png) | All clear |
+
+| Bag context.py  | ![screenshot](docs/images/bag-context-py.png) | All clear |
+| Bag urls.py  | ![screenshot](docs/images/bag-urls-py.png) | All clear |
+| Bag views.py  | ![screenshot](docs/images/docs/images/bag-views-py.png) | One line with E501 line too long |
+
+| Checkout admin.py  | ![screenshot](docs/images/checkout-admin-py.png) | All clear |
+| Checkout forms.py  | ![screenshot](docs/images/checkout-forms-py.png) | All clear |
+| Checkout models.py  | ![screenshot](docs/images/checkout-models-py.png) | All clear |
+| Checkout signals.py  | ![screenshot](docs/images/checkout-signals-py.png) | All clear |
+| Checkout urls.py  | ![screenshot](docs/images/checkout-urls-py.png) | All clear |
+| Checkout views.py  | ![screenshot](docs/images/checkout-views-py.png) | One line with E501 line too long |
+| Checkout webhooks.py  | ![screenshot](docs/images/checkout-webhooks-py.png) | All clear |
+
+| Checkout forms.py  | ![screenshot](docs/images/homeapp-forms-py.png) | All clear |
+| Checkout models.py  | ![screenshot](docs/images/homeapp-models-py.png) | All clear |
+| Checkout urls.py  | ![screenshot](docs/images/homeapp-urls-py.png) | All clear |
+| Checkout views.py  | ![screenshot](docs/images/homeapp-views-py.png) | All clear |
+
+| Profiles forms.py  | ![screenshot](docs/images/profile-forms-py.png) | All clear |
+| Profiles models.py  | ![screenshot](docs/images/profile-models-py.png) | All clear |
+| Profiles views.py  | ![screenshot](docs/images/profile-views-py.png) | All clear |

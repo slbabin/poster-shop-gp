@@ -2,7 +2,6 @@ from django import forms
 from .models import Newsletter, Contact
 
 
-
 class NewsletterForm(forms.ModelForm):
 
     """ A form to render the fields to use in the newsletter form """
@@ -13,7 +12,7 @@ class NewsletterForm(forms.ModelForm):
 
     def __init__(self, *args, user=None, **kwargs):
         super().__init__(*args, **kwargs)
-        
+
         placeholders = {
             'name': 'Name',
             'email': 'E-mail address',
@@ -42,7 +41,7 @@ class ContactForm(forms.ModelForm):
 
     def __init__(self, *args, user=None, **kwargs):
         super().__init__(*args, **kwargs)
-       
+
         placeholders = {
             'name': 'Your Name',
             'email': 'Your email address',

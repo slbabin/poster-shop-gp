@@ -1,7 +1,8 @@
 from django.db import models
 
+
 class Category(models.Model):
-        
+
     class Meta:
         verbose_name_plural = 'Categories'
 
@@ -17,7 +18,8 @@ class Category(models.Model):
 
 class Poster(models.Model):
     sku = models.CharField(max_length=255, null=True, blank=True)
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)    
+    category = models.ForeignKey('Category', null=True, blank=True,
+                                 on_delete=models.SET_NULL)
     title = models.CharField(max_length=255)
     description = models.TextField()
     artist = models.CharField(max_length=255)

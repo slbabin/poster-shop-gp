@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse,\
+                            get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -26,7 +27,8 @@ def cache_checkout_data(request):
         })
         return HttpResponse(status=200)
     except Exception as e:
-        messages.error(request, 'Sorry, we could not process your payment right now. Please try again later.')
+        messages.error(request, 'Sorry, we could not process your\
+                                payment right now. Please try again later.')
         return HttpResponse(content=e, status=400)
 
 
@@ -81,7 +83,8 @@ def checkout(request):
 
                 except Poster.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "One of the products in your bag wasn't \
+                        found in our database. "
                         "Please call us for assistance!")
                     )
 
@@ -90,11 +93,12 @@ def checkout(request):
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_id]))
-            
-        else:
-            messages.error(request, 'There was some error with the form. Please check again.')
 
-    else:    
+        else:
+            messages.error(request, 'There was some error with the form.\
+                                     Please check again.')
+
+    else:
 
         bag = request.session.get('bag', {})
         if not bag:
@@ -126,12 +130,10 @@ def checkout(request):
                     'county': profile.default_county,
                 })
 
-            except UserProfile.DoesNotExist:                
+            except UserProfile.DoesNotExist:
                 order_form = OrderForm()
         else:
-            order_form = OrderForm()        
-
-
+            order_form = OrderForm()
 
     if not stripe_public_key:
         messages.warning(request, 'No Stripe public key.')
@@ -147,7 +149,7 @@ def checkout(request):
 
 
 def checkout_success(request, order_id):
-    
+
     save_info = request.session.get('save_info')
 
     order = get_object_or_404(Order, order_id=order_id)
@@ -186,4 +188,4 @@ def checkout_success(request, order_id):
         'order': order,
     }
 
-    return render(request, template, context)    
+    return render(request, template, context)
