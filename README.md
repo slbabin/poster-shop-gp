@@ -7,25 +7,38 @@ Welcome to the Shop Store, a Django-based e-commerce website specialized in sell
 The live version of this app is located [here](https://poster-shop-4968517d882f.herokuapp.com). 
 
 ## Table Of Contents:
-1. [Design](#design)
-    * [User Stories](#user-stories)
-    * [Wireframes](#wireframes)
-    * [Agile Methodology](#agile-methodology)
-    * [Database Diagram](#database-diagram)
-    * [Features](#features)
-    * [Future Features](#future-features)
-    * [Technologies Used](#technologies-used)
-    * [Testing](#testing)
-    * [Deployment](#deployment)
 
+* [User Stories](#user-stories)
+    * [Site User](#site-user)
+    * [Site Admin](#site-admin)
+* [Wireframes](#wireframes)
+* [Features](#features)
+* [Future Features](#future-features)
+* [Database Diagram](#database-diagram)
+* [Agile Methodology](#agile-methodology)
+* [Bussniess model & Marketing](#business-model-marketing)
+    * [Business Model](#business-model)
+    * [Marketing Strategy](#marketing-strategy)
+* [Robots](#robots)
+* [Sitemap](#sitemap)
+* [Testing](#testing)
+* [Deployment](#deployment)
+    * [ElephantSQL Database](#elephantSQL-database)
+    * [Amazon AWS](#amazon-AWS)
+    * [S3 Bucket](#S3-bucket)
+    * [AM](#AWS)
+    * [Final AWS Setup](#final-awsssetup)
+    * [Heroku Deployment](#heroku-deploymentp)
+* [Technologies Used](#technologies-used)
+* [Credits](#credits)
 
+<br />
 
 # User Stories
 
 User stories are a great way to define the functionality and features of a ecommerce site from the perspective of the end users. Here are some user stories for the e-commerce site Poster Shop:
 
 ## Site User
-
 
 - As a site user, I would like to view a list of available posters so that I can select one or more to purchase.
 
@@ -120,7 +133,7 @@ Wireframes provide a visual representation of the site's layout and structure, m
 </details>
 
 
-## Features
+# Features
 
 
 Vintage & Retro Collection: Browse through a curated selection of vintage and retro posters from various eras.
@@ -148,8 +161,6 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
  - Navigation links include filtering by different parametres such as By Price, By Category, and All Posters. 
 
    ![Main site navigation bar](docs/images/navigation-bar.png)
-
-
 
 
 - Home Page
@@ -287,23 +298,22 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
     - The footer contains the Subscribe to Newsletters button, clickin on which opens a dedicated page with the subscribe form.
 
     ![Site's home page screenshot](docs/images/footer.png) 
-
  
 
-## Database Diagram
+# Database Diagram
     
-    - Database diagram for this project was created using online tool [https://dbdiagram.io](https://dbdiagram.io). A diagram provides a clear visual representation of the database structure, including tables, fields, and relationships between different models. 
+- Database diagram for this project was created using online tool [https://dbdiagram.io](https://dbdiagram.io). A diagram provides a clear visual representation of the database structure, including tables, fields, and relationships between different models. 
 
     ![Site's home page screenshot](docs/images/diagram.png)
 
 
-## Agile Methodologies
+# Agile Methodology
     
     - Github Projects was used to keep track of the User Stories and progress of the prject. 
     - The link to the project is located [here](https://github.com/users/slbabin/projects/6/views/1). 
 
 
-## Bussniess model & Marketing
+# Bussniess model & Marketing
 
 ### Business Model:
 
@@ -329,7 +339,7 @@ To effectively market the online vintage and retro poster website and attract cu
 
 - **Social Media Marketing:** Utilized popular social media platforms such as Facebook to showcase posters, engage with followers, and run targeted advertising campaigns to reach potential customers. 
 
-![Site's home page screenshot](docs/images/Facebook-business-page.png) 
+    ![Site's home page screenshot](docs/images/Facebook-business-page.png) 
 
 The following marketing strategies can be implemented in the future incorporating various online and offline channels:
 
@@ -344,132 +354,164 @@ The following marketing strategies can be implemented in the future incorporatin
 
 By implementing a robust business model and executing a comprehensive marketing strategy, the online vintage and retro poster website can effectively attract customers, drive sales, and establish itself as a premier destination for vintage poster enthusiasts.
 
-## Testing
+# Robots
+The robots.txt file was included at the root-level. Including a robots.txt file in a Django project is a good practice to control web crawlers' access to certain parts of your website. The robots.txt file serves as a directive for search engine crawlers and other automated bots, indicating which pages or sections of your site should not be crawled or indexed.
+    ![Site's home page screenshot](docs/images/robots-txt.png) 
 
-### Code Validation
+# Sitemap
 
-This section displays code validations for this project. 
+For this project the sitemap.xml file was generated using the online sitemap generator tool [XML Sitemaps Generator](https://www.xml-sitemaps.com/). Creating a sitemap.xml file for this project facilitates efficient search engine indexing, prioritizes and signals update frequency of URLs, improves crawl efficiency, expedites new content discovery, and aids in error identification for enhanced website visibility and search engine optimization.
 
-### HTML
-For the HTML code validation it was used the [HTML W3C Validator](https://validator.w3.org) to validate HTML files.
+# Testing
 
-| Page | W3C URL |  Screenshot | Notes |
-| --- | --- | --- | --- |
-| Index/Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2F) | ![screenshot](docs/images/index-page-html-validation.png) |   |
-| Posters page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fposters%2F) | ![screenshot](docs/images/posters-page-html-validation.png) |    |
-| Poster detail page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fposters%2F2%2F) | ![screenshot](docs/images/poster-detail-page-html-validation.png) |    |
-| Shopping bag page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fbag%2F) | ![screenshot](docs/images/bag-page-html-validation.png) |    |
-| Sign up page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](docs/images/signup-page-html-validation.png) |    |
-| Login page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](docs/images/login-page-html-validation.png) |    |
-| Profile page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fprofile%2FF) | ![screenshot](docs/images/profile-page-html-validation.png) |  No error or warning, just notification about trailing slash on void elements has no effect.  |
-| Add poster page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fposters%2Fadd%2F) | ![screenshot](docs/images/profile-page-html-validation.png) |  No error or warning, just notification about trailing slash on void elements has no effect.  |
-| Checkout page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fcheckout%2F) | ![screenshot](docs/images/checkout-page-html-validation.png) |    |
-| Checkout success page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fcheckout%2Fcheckout_success) | ![screenshot](docs/images/checkout-success-page-html-validation.png) |    |
-| Contact page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fcontact%2F) | ![screenshot](docs/images/contact-page-html-validation.png) |    |
-| Newsletter subscribe page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fnewsletters%2F) | ![screenshot](docs/images/newsletter-page.png) |    |
-| About page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fabout%2F) | ![screenshot](docs/images/about-page-html-validation.png) |    |
-| Order history page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fprofile%2Forder_history%2F282FCCEC776149C5833165520A5B09E5) | ![screenshot](docs/images/order-history-page-html-validation.png |    |
-| Order history page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fposter-shop-4968517d882f.herokuapp.com%2Fabout%2F) | ![screenshot](docs/images/about-page-html-validation.png) |    |
+For detailed information on testing procedures, please refer to the [TESTING.md](TESTING.md) file located in the project's root directory.
+This file provides comprehensive guidance on running tests, understanding test coverage, and ensuring the robustness of the Django project.
 
+# Deployment
 
+The live project was deployed on Heroku. Heroku is a cloud platform as a service (PaaS) that enables developers to build, deploy, manage, and scale web applications without having to worry about infrastructure management. The following steps were taken prior deploying to Heroku. 
 
-### CSS
+### ElephantSQL Database
 
-The [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) was used to validate CSS files for this project.
+The [ElephantSQL](https://www.elephantsql.com) PostgreSQL database was used for this project. The following steps were taken in order to create a database.
 
-| Page | Jigsaw URL |  Screenshot | Notes |
-| --- | --- | --- | --- |
-| base.css | [URL](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fposter-shop.s3.amazonaws.com%2Fstatic%2Fcss%2Fbase.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](docs/images/base-css.png) | Six warning related to a vendor extension and same color for background and border |
-| checkout.css | [URL](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fposter-shop.s3.amazonaws.com%2Fstatic%2Fcheckout%2Fcss%2Fcheckout.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) | ![screenshot](docs/images/checkout-css.png) |    |
+  - Sign-up with your GitHub account on the ElephantSQL site.
+  - Click Create New Instance to start a new database.
+  - Provid a name for the database.
+  - Select the Tiny Turtle (Free) plan.
+  - Select the Region and Data Center closest .
+  - Once created, click on the new database name, where you can get the database URL and Password.
 
+### Amazon AWS
 
-### JavaScript
+Due to the fact that Heroku doesn't doesn't allow persist media and staticfiles, I used  Amazon Web Services (AWS) to store media and static files online.
 
-The [JShint Validator ](https://jshint.com/) was used to validate JS files for this project.
+After an AWS account is created, make sure you logged to the AWS Management Console page.
 
-| Page | Screenshot | Notes |
-| --- | --- | --- |
-| stripe_elements.js  | ![screenshot](docs/images/stripe_elements_js.png) | Warning about undefined Stripe variable |
-| countryfield.js  | ![screenshot](docs/images/countryfield-js.png) | No issues |
-| Update quantity in a bag script  | ![screenshot](docs/images/update-quantity-script.png) | No issues |
-| Quantity input script  | ![screenshot](docs/images/quantity_input-script.png) | No issues |
-| Add/edit poster js  | ![screenshot](docs/images/add-poster-js.png) | No issues |
-| Poster sort js  | ![screenshot](docs/images/posters-sort-js.png) | No issues |
+#### S3 Bucket
+S3 bucket is a scalable storage service provided by AWS that allows users to store and retrieve data and objects, such as files and images, over the internet. 
 
+  - Search for S3.
 
-### Python
+  - Create a new bucket.
 
-Python files were validated using the [Code Institute Python Linter](https://pep8ci.herokuapp.com/).
+  - Uncheck Block all public access, and acknowledge that the bucket will be public.
 
-| Page | Screenshot | Notes |
-| --- | --- | --- |
-| setting.py  | ![screenshot](docs/images/setting-py.png) | Were getting E501 line too long errors. I had to add # noqa where lines of code could not be broken. |
-| Products admin.py  | ![screenshot](docs/images/products-admin-py.png) | All clear |
-| Products forms.py  | ![screenshot](docs/images/products-form-py.png) | All clear |
-| Products models.py  | ![screenshot](docs/images/products-models-py.png) | All clear |
-| Products urls.py  | ![screenshot](docs/images/products-urls-py.png) | All clear |
-| Products views.py  | ![screenshot](docs/images/products-views-py.png) | All clear |
-| Products widgets.py  | ![screenshot](docs/images/products-widget-py.png) | All clear |
+  - From Object Ownership, make sure to have ACLs enabled, and Bucket owner preferred selected.
 
-| Bag context.py  | ![screenshot](docs/images/bag-context-py.png) | All clear |
-| Bag urls.py  | ![screenshot](docs/images/bag-urls-py.png) | All clear |
-| Bag views.py  | ![screenshot](docs/images/docs/images/bag-views-py.png) | One line with E501 line too long |
+  - From the Properties tab, turn on static website hosting, and type index.html and error.html in their respective fields, then click Save.
 
-| Checkout admin.py  | ![screenshot](docs/images/checkout-admin-py.png) | All clear |
-| Checkout forms.py  | ![screenshot](docs/images/checkout-forms-py.png) | All clear |
-| Checkout models.py  | ![screenshot](docs/images/checkout-models-py.png) | All clear |
-| Checkout signals.py  | ![screenshot](docs/images/checkout-signals-py.png) | All clear |
-| Checkout urls.py  | ![screenshot](docs/images/checkout-urls-py.png) | All clear |
-| Checkout views.py  | ![screenshot](docs/images/checkout-views-py.png) | One line with E501 line too long |
-| Checkout webhooks.py  | ![screenshot](docs/images/checkout-webhooks-py.png) | All clear |
-
-| Checkout forms.py  | ![screenshot](docs/images/homeapp-forms-py.png) | All clear |
-| Checkout models.py  | ![screenshot](docs/images/homeapp-models-py.png) | All clear |
-| Checkout urls.py  | ![screenshot](docs/images/homeapp-urls-py.png) | All clear |
-| Checkout views.py  | ![screenshot](docs/images/homeapp-views-py.png) | All clear |
-
-| Profiles forms.py  | ![screenshot](docs/images/profile-forms-py.png) | All clear |
-| Profiles models.py  | ![screenshot](docs/images/profile-models-py.png) | All clear |
-| Profiles views.py  | ![screenshot](docs/images/profile-views-py.png) | All clear |
+  - From the Permissions tab, add the following CORS configuration:
+```shell
+	[
+		{
+			"AllowedHeaders": [
+				"Authorization"
+			],
+			"AllowedMethods": [
+				"GET"
+			],
+			"AllowedOrigins": [
+				"*"
+			],
+			"ExposeHeaders": []
+		}
+	]
+```
 
 
-# User Story Testing
+ - Copy the ARN string.
+ - From the Bucket Policy, select the Policy Generator link and generate a Bucket Policy.
+ - Copy the entire Policy, and paste it into the Bucket Policy Editor.
+ - Click Save.
+ - From the Access Control List (ACL) section, click "Edit" and enable List for Everyone (public access).
 
-User stories were manually tested to ensure all acceptance criteria were met. 
-### As a site user
+#### IAM
 
-| Feature               | Test Performed                                                     | Result  | Notes    |
-|-----------------------|--------------------------------------------------------------------|---------|------------
-| View list of all posters | Clicking on the Shop now button redirects to all posters page   | Pass    |          |
-| View poster details | Clicking on an individual I can see its image in full, title, price, category, year, description, and artist.| Pass    |
-| Search for poster | Entering different search criteria into the search field returns a list of posters matching search those criteria  | Pass    |        |
-| Register account | Clicking on the Register link redirects to the form. After filling out the form you redirected to the confirmation page   | Pass    |
-| Confirmation email | After registering for an account, you receive a confirmation email in your inbox with the verification link.   | Pass    |        |
-| Login | Clicking on the login link redirects to the login form, after login you get a success notification | Pass    |
-| Logout | Clicking on the logout link redirects to the logout confirmation page. After clicking on Sign out you get a success message  | Pass    |
-| Recover password | Clicking on the Forgot password link redirects to the recovery form. After entering email address you get the password reset link in your inbox.  | Pass    |       
-| Sort posters  | Clicking on the sorting dropdown allows to sort posters by price, name, and category.   | Pass    |   |
-| Change quantity  | Clicking on the quantity button changes the amount.| Pass    |   |
-| Add to bag  | Clicking on the Add to bag button adds the item to the shopping bag. | Pass    |   |
-| Open checkout  | Clicking on the Go to Checkout button redirects to the checkout page. | Pass    |   |
-| Update items in bag | Clicking Update button allows to change amount of purchasing items. | Pass    |   |
-| Delete items in bag | Clicking Delete button allows to delete the item from the shopping bag. | Pass    |   |
-| Complete checkout | Clicking on the Complete checkout button open the billing and shipping form info. | Pass    |   |
-| Oder confirmation notification | After completing the form and clicking Complete order, receive an order confirmation page with the order details. | Pass    |   |
-| Oder confirmation email | After successfully completed purchase, an email with order details should be send to the user. | Fail    | The email is not being sent.  |
-| View saved profile info | Clicking on My Profile will open the page with user's information. | Pass    |   |
-| View order history | My profile page will display all previously completed orders. | Pass    |   |
-| View individual order | Clicking on the old order link will open that order details.  | Pass    |   |
-| Contact form | Clicking on the Conact menu item on top or in the footer will redirect to the Contact form. | Pass    |   |
-| Contact success message | Upon submitting the contact form, the success message will display.  | Pass    |   |
-| Subscribe to newsletters | Clicking on the Subscribe to newsletters button in the footer redirects to the newletters form.  | Pass    |   |
-| Pages links | Clicking on the links in the site menu will open the corresponding page.  | Pass    |   |
+On the AWS Services Menu, search for and open IAM (Identity and Access Management).
 
-### As a site admin
+ - From User Groups, click Create New Group.
+ - From User Groups, select your newly created group, and go to the Permissions tab.
+ - Open the Add Permissions dropdown, and click Attach Policies.
+ - Select the policy, then click Add Permissions at the bottom when finished.
+ - From the JSON tab, select the Import Managed Policy link
+ - From User Groups, click your on your newly created group.
+ - Click Attach Policy.
+ - Search for the policy and select it, then Attach Policy.
+ - From User Groups, click Add User.
+ - Select the group to add a new user.
+ - Click Create User once done.
+ - You should see a button to Download .csv file. This contains Access key ID and Secret access key, so it should be stored safely on a computer.
 
-| Feature               | Test Performed                                                     | Result  | Notes    |
-|-----------------------|--------------------------------------------------------------------|---------|------------
-| Add new poster on the site | Clicking on the Poster Management button open a form which allows to submit a new poster without login into Django admin dashboard   | Pass    |          |
-| Edit poster | Clicking on the Edit button allows to edit poster details.   | Pass    |          |
-| Delete poster | Clicking on the Delete button allows to delete poster from the site.   | Pass    |       |
-| Delete confirmation | Clicking on the Delete button displays the delete confirmation alert. | Pass    |          |
+#### Final AWS Setup
+
+- Back within S3, create a new folder called: media.
+- Select project images to prepare them for being uploaded into the new folder.
+- Under Manage Public Permissions, select Grant public read access to this object.
+- Click Upload.
+
+## Heroku Deployment
+
+ - Navigate to the top-right corner of your Heroku Dashboard, click on the "New" button, and then choose "Create new app" from the dropdown menu.
+- Ensure that your app name is distinct, opt for a region nearest to your location (either EU or USA), and then proceed by selecting "Create App."
+- From the new app Settings, click Reveal Config Vars, and set your environment variables.
+
+Heroku needs two additional files in order to deploy properly.
+
+ - requirements.txt
+ - Procfile
+
+ - In the projects's settings file in ALLOWED_HOSTS you need to add Heroku app URL.
+
+ For Heroku deployment, you need to connect your own GitHub repository to the newly created app:
+ - Click on the Deploy tab.
+ - Choose GitHub and connect with your GitHub account.
+ - Search for your project repository and connect to it. 
+ - Project can be deployed manually by selecting the branch and clicking Deploy Branch.
+ - Alternatively, automatic deployment can be enabled.
+
+
+# Technologies used for this project
+
+[Django](https://en.wikipedia.org/wiki/Django_web_framework) - Django is a high-level Python web framework primarily used for building this ecommerce application. It provides a robust set of tools, libraries, and patterns that facilitate rapid development, scalability, and maintainability of a web application.
+
+[Bootstrap](https://en.wikipedia.org/wiki/Bootstrap_front-end_framework) -  It provides a collection of pre-designed HTML, CSS, and JavaScript components and utilities that helped streamline the development process.
+
+[GitPod](https://gitpod.io/) - Used for writing code, committing, and then pushing to GitHub.
+
+[GitHub](https://github.com/) - Used to store the project after pushing.
+
+[Heroku](https://heroku.com/) - Used to deploy the project online. 
+
+[AWS](https://aws.amazon.com/) - Used to store MEDIA and STATIC files for deployed site.
+
+[ElephantSQL](https://www.elephantsql.com) - Used as a cloud PostgreSQL database service provider. 
+
+[https://dbdiagram.io](https://dbdiagram.io) - Was used to create a database diagram for this project.
+
+[www.mockflow.com](www.mockflow.com) - Used to create site pages wireframes.
+
+[Font Awesome](https://fontawesome.com/) - Used Font Awesome icons for various purposes, such as buttons and decorative elements, providing a consistent and visually appealing user experience.
+
+[XML Sitemaps Generator](https://www.xml-sitemaps.com/) - Used to create a sitemap.xml file for this project. 
+
+# Credits
+
+### Code
+
+- The code in this project incorporates elements from Code Institute tutorials on the "Boutique Ado" project, which have been tailored to fit the project's unique needs, along with custom-written code and models developed by me.
+
+### Content
+
+ - Content for the site was take from the following sites:
+    
+    - [https://mymodernmet.com](https://mymodernmet.com/download-free-posters-belle-epoque-art/)
+    - [https://www.vintagemovieposters.co.uk](https://www.vintagemovieposters.co.uk)
+
+### Media
+
+ - Poster images were take from the following sites:
+
+    - [https://www.internationalposter.com](https://www.internationalposter.com)
+    - [https://mymodernmet.com](https://mymodernmet.com/download-free-posters-belle-epoque-art/)
+    - [https://www.vintagemovieposters.co.uk](https://www.vintagemovieposters.co.uk)

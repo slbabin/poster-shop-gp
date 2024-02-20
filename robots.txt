@@ -1,7 +1,7 @@
 User-agent: *
 Disallow: /admin/
 Disallow: /accounts/
-Disallow: /basket/
+Disallow: /bag/
 Disallow: /checkout/
 Disallow: /checkout_success/
 Sitemap: https://poster-shop-4968517d882f.herokuapp.com/sitemap.xml
