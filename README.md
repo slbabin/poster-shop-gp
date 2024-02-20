@@ -431,3 +431,45 @@ Python files were validated using the [Code Institute Python Linter](https://pep
 | Profiles forms.py  | ![screenshot](docs/images/profile-forms-py.png) | All clear |
 | Profiles models.py  | ![screenshot](docs/images/profile-models-py.png) | All clear |
 | Profiles views.py  | ![screenshot](docs/images/profile-views-py.png) | All clear |
+
+
+# User Story Testing
+
+User stories were manually tested to ensure all acceptance criteria were met. 
+### As a site user
+
+| Feature               | Test Performed                                                     | Result  | Notes    |
+|-----------------------|--------------------------------------------------------------------|---------|------------
+| View list of all posters | Clicking on the Shop now button redirects to all posters page   | Pass    |          |
+| View poster details | Clicking on an individual I can see its image in full, title, price, category, year, description, and artist.| Pass    |
+| Search for poster | Entering different search criteria into the search field returns a list of posters matching search those criteria  | Pass    |        |
+| Register account | Clicking on the Register link redirects to the form. After filling out the form you redirected to the confirmation page   | Pass    |
+| Confirmation email | After registering for an account, you receive a confirmation email in your inbox with the verification link.   | Pass    |        |
+| Login | Clicking on the login link redirects to the login form, after login you get a success notification | Pass    |
+| Logout | Clicking on the logout link redirects to the logout confirmation page. After clicking on Sign out you get a success message  | Pass    |
+| Recover password | Clicking on the Forgot password link redirects to the recovery form. After entering email address you get the password reset link in your inbox.  | Pass    |       
+| Sort posters  | Clicking on the sorting dropdown allows to sort posters by price, name, and category.   | Pass    |   |
+| Change quantity  | Clicking on the quantity button changes the amount.| Pass    |   |
+| Add to bag  | Clicking on the Add to bag button adds the item to the shopping bag. | Pass    |   |
+| Open checkout  | Clicking on the Go to Checkout button redirects to the checkout page. | Pass    |   |
+| Update items in bag | Clicking Update button allows to change amount of purchasing items. | Pass    |   |
+| Delete items in bag | Clicking Delete button allows to delete the item from the shopping bag. | Pass    |   |
+| Complete checkout | Clicking on the Complete checkout button open the billing and shipping form info. | Pass    |   |
+| Oder confirmation notification | After completing the form and clicking Complete order, receive an order confirmation page with the order details. | Pass    |   |
+| Oder confirmation email | After successfully completed purchase, an email with order details should be send to the user. | Fail    | The email is not being sent.  |
+| View saved profile info | Clicking on My Profile will open the page with user's information. | Pass    |   |
+| View order history | My profile page will display all previously completed orders. | Pass    |   |
+| View individual order | Clicking on the old order link will open that order details.  | Pass    |   |
+| Contact form | Clicking on the Conact menu item on top or in the footer will redirect to the Contact form. | Pass    |   |
+| Contact success message | Upon submitting the contact form, the success message will display.  | Pass    |   |
+| Subscribe to newsletters | Clicking on the Subscribe to newsletters button in the footer redirects to the newletters form.  | Pass    |   |
+| Pages links | Clicking on the links in the site menu will open the corresponding page.  | Pass    |   |
+
+### As a site admin
+
+| Feature               | Test Performed                                                     | Result  | Notes    |
+|-----------------------|--------------------------------------------------------------------|---------|------------
+| Add new poster on the site | Clicking on the Poster Management button open a form which allows to submit a new poster without login into Django admin dashboard   | Pass    |          |
+| Edit poster | Clicking on the Edit button allows to edit poster details.   | Pass    |          |
+| Delete poster | Clicking on the Delete button allows to delete poster from the site.   | Pass    |       |
+| Delete confirmation | Clicking on the Delete button displays the delete confirmation alert. | Pass    |          |

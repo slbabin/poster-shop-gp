@@ -396,13 +396,28 @@ footer {
     body {
         height: calc(100vh - 100px);
     }
-
-    .logo-font{
-        font-size: 1.7em;
-    
-    }
     .shop-now-button {        
         min-width: 100%;
     }
 }
 
+@media (max-width: 551px) {
+    .header-container {
+        padding-top: 130px;
+    }
+
+    .hero-txt h1 {
+        font-size: 30px;
+    }
+
+    body {
+        height: calc(100vh - 100px);
+    }
+    .shop-now-button {        
+        min-width: 100%;
+    }
+
+    .jumbotron {        
+        max-width: 90% !important;
+    }
+}
