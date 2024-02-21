@@ -408,6 +408,7 @@ footer {
 
     .hero-txt h1 {
         font-size: 30px;
+       
     }
 
     body {
@@ -419,5 +420,9 @@ footer {
 
     .jumbotron {        
         max-width: 90% !important;
+    }
+    .hero-txt {
+        top: 20%;
+        right: 20px;
     }
 }
