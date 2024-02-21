@@ -300,8 +300,8 @@ Wireframes provide a visual representation of the site's layout and structure, m
 
 # Agile Methodology
     
-    - Github Projects was used to keep track of the User Stories and progress of the project. 
-    - The link to the project is located [here](https://github.com/users/slbabin/projects/6/views/1). 
+- Github Projects was used to keep track of the User Stories and progress of the project. 
+- The link to the project is located [here](https://github.com/users/slbabin/projects/6/views/1). 
 
 
 # Business model & Marketing
