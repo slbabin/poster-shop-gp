@@ -162,3 +162,20 @@ Only a limited amount of automated tests were conducted on this application, mos
 | Privacy page  | ![screenshot](docs/images/privacy-page-mobile.png) | ![screenshot](docs/images/privacy-page-desktop.png)  |     |
 | Login page  | ![screenshot](docs/images/login-page-mobile.png) | ![screenshot](docs/images/login-page-desktop.png)  |     |
 | Register page  | ![screenshot](docs/images/register-page-mobile.png) | ![screenshot](docs/images/register-page-desktop.png)  |     |
+
+
+# Stripe purchase confirmatin
+
+- Stripe developer console payment confirmation
+   ![screenshot](docs/images/stripe-payment-confirmation.png)
+
+- Order confirmation email
+   ![screenshot](docs/images/email-confirmation.png)    
+
+
+# Bugs
+
+| Bug/Issue | Solution |
+| --- | --- | 
+| After completing the purchase, no order confirmaton email was sent to the user. | It turned out that I didn't include stripe library in the webhook_handler file and this caused error 500 in the Stripe logs. I fixed this by importing stripe in this file | 
+| Sripe displayed the error: null value in column "street_address2" of relation "checkout_order" violates not-null constraint  | This field accidentally was made required, but in the form this field was not required. So if this field was left empty, it would give an error in Stripe account. Due to time contrains I left this bag unfixed. | 

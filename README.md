@@ -44,7 +44,7 @@ User stories are a great way to define the functionality and features of a ecomm
 
 - As a site user, I would like to click on an individual poster so that I can see its image in full, title, price, category, year, description, and artist. 
 
-- As a site user, I would like to search for a poster using different search criterea such as title or artist name as well as other parametrs so that I can easily find the poster I want to purchase.
+- As a site user, I would like to search for a poster using different search criteria such as title or artist name as well as other parameters so that I can easily find the poster I want to purchase.
 
 - As a site user I would like to sort posters by price, name, and category so that I can easily find the poster that I like or need.
 
@@ -136,17 +136,8 @@ Wireframes provide a visual representation of the site's layout and structure, m
 # Features
 
 
-Vintage & Retro Collection: Browse through a curated selection of vintage and retro posters from various eras.
-User Authentication: Register an account or log in securely to manage your orders and preferences.
-Shopping Cart: Add posters to your cart for easy checkout.
-Secure Checkout: Process payments securely using integrated payment gateways.
-Order Management: View and manage your orders through the user dashboard.
-Admin Panel: Admins can manage products, orders, and users through an intuitive admin interface.
-Search & Filter: Easily find posters by searching or filtering based on categories, eras, artists, and more.
-Responsive Design: Enjoy a seamless browsing experience across devices with our responsive design.
-
-- Site Navagation 
-  - The site havigation is added in the header of the site and consists of three sections - the main menu bar centered horizontally, the members area, and search bar. The search field is placed in the center of page just above the main menu bar. The members area is placed in the top right corner of the page for optimizing visibility, accessibility, and user experience, contributing to a smoother and more intuitive browsing experience for users.
+- Site Navigation  
+  - The site havigation is added in the header of the site and consists of three sections - the main menu bar centered horizontally, the members area, and search bar. The search field is placed in the center of page just above the main menu bar. The member area is placed in the top right corner of the page for optimizing visibility, accessibility, and user experience, contributing to a smoother and more intuitive browsing experience for users.
 
   - The site logo was placed on the top left side of the navigation bar which optimizes brand recognition, navigation flow, consistency, and space efficiency, contributing to a positive user experience and reinforcing the website's identity. The Logo image is linked to the home page, clicking on it will bring the user back to the home page from any other page.
 
@@ -154,30 +145,30 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
 
   - When viewed on smaller screens, the navigation bar transforms into a compact hamburger menu, represented by a simple icon consisting of three horizontal lines. Clicking on this icon reveals a dropdown menu with all navigation options, providing users with a streamlined and mobile-friendly navigation experience.
 
-  - On smaller screens the search is collapced into a search icon clicking on which reveals full search bar in the dropdown.
+  - On smaller screens the search is collapsed into a search icon clicking on which reveals full search bar in the dropdown.
 
-  - Links in the navigation menu have visual cues, with the hover over color change. On About us and Contact pages different color or the menue item indicates current page location.
+  - Links in the navigation menu have visual cues, with the hover over color change. On About us and Contact pages different color or the menu item indicates current page location.
 
- - Navigation links include filtering by different parametres such as By Price, By Category, and All Posters. 
+ - Navigation links include filtering by different parameters  such as By Price, By Category, and All Posters. 
 
    ![Main site navigation bar](docs/images/navigation-bar.png)
 
 
 - Home Page
 
-   - The Home page is the main entry page to the site. It intuitively shows the site visiton what the site is about via the page background and the jumbotron containing short intro text and the click to action button.  
+   - The Home page is the main entry page to the site. It intuitively shows the site visitor what the site is about via the page background and the jumbotron containing short intro text and the click to action button.  
 
     ![Site's home page screenshot](docs/images/index-page.png)
 
 - Posters Page
 
    - This page displays a list of all posters. The user can use filters and search queries to filter the list to their desired result.
-        - Poster Cards - The poster cards display the posters listed on the site. The information shown on each card is the poster's image, title, price, category and artist.
-        - Responsive behaviour - Poster cards will display different amount of columns depending on the viewed screen size. 
+        - Poster Cards - The poster cards display the posters listed on the site. The information shown on each card is the poster's image, title, price, category, and artist.
+        - Responsive behavior - Poster cards will display different amount of columns depending on the viewed screen size. 
         - Sort By Selector - This selector allows the user to order the products displayed by title, price and category in both ascending and descending orders.
         - Products Home Link - There is a link to bring the user back to the 'Products Home', this will display all products rather than filtering by category or search queries.
         - Search Results/Product Counter - Right next to the link to the 'Products Home' is a counter that tells the user how many products are displayed on the page. If the user has entered a search query, the counter will advise how many products were found for that specific search query.
-        - Update/Delete Links - These links are located below a poster card and appear only to the authorised user. They allow to manage posters from the front end of the site instead of log in into the admin dashboard. Clicking on the Delete button triggers the alert message asking for confirmation of the delete action. 
+        - Update/Delete Links - These links are located below a poster card and appear only to the authorized user. They allow to manage posters from the front end of the site instead of logging into the admin dashboard. Clicking on the Delete button triggers the alert message asking for confirmation of the delete action. 
    
  ![Site's home page screenshot](docs/images/posters-page.png)
 
@@ -185,7 +176,7 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
 
    - The poster detail page will render the information for the chosen product and allow the user to select a size and add the item to the shopping bag:
 
-        - Poster Details - This is a dynamic page that will display the selected poster's image, title, price, category, descriptiona and artist.
+        - Poster Details - This is a dynamic page that will display the selected poster's image, title, price, category, description and artist.
         - Size Selector - The size selector can be used to select the specific size the user wants to purchase.
         - Add to Bag Button - Below the size selector there is the Add to Bag button which allows the user to add the desired product and size to their shopping basket for purchasing.       
         - Keep Shopping Button - After the user added the desired poster to the shopping basket, they have the option to continue shopping by clicking on the Keep shopping button which is located next to the Add to bag button. 
@@ -211,7 +202,7 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
         - Shipping Info Form - This feature allows the user to enter the shipping details they wish their items to be delivered to. These details are then displayed on the confirmation screen.
         - Order Summary - This feature allows the user to take one more look at the items in their shopping bag and the total cost before paying and submitting their order.
         - Stripe Payment Feature - This feature allows the user to securely submit their payment information to the Stripe payment system, securing the placement of their order.
-        - Save delivery information - This checkbox on a checkout form is  used to offer users the option to save their shipping information for future purchases or account management.
+        - Save delivery information - This checkbox on a checkout form is used to offer users the option to save their shipping information for future purchases or account management.
         - Loading spinner - Upon clicking "Complete Order," a friendly loading spinner will appear, signaling that the payment is undergoing processing by the backend code and the Stripe API.
 
       ![Site's home page screenshot](docs/images/checkout-page.png)
@@ -221,7 +212,7 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
 
     - This page shows the order details of the purchase that was just carried out.
         - Order summary - The order summary page provides a comprehensive overview of the customer's purchase. A unique order number is also provided.
-        - Return To Store Button - This button brings the user back to the store where they can continue to browsing posters on offer.
+        - Return To Store Button - This button brings the user back to the store where they can continue to browse posters on offer.
         
      ![Site's home page screenshot](docs/images/order-confirmation.png) 
 
@@ -253,7 +244,7 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
 
 - Form errors
 
-   - Every form on the site dispays a warning message on the incorrect input. Displaying errors on a form is essential for providing feedback to users when they input incorrect or incomplete information. 
+   - Every form on the site displays a warning message on the incorrect input. Displaying errors on a form is essential for providing feedback to users when they input incorrect or incomplete information. 
 
    ![Site's home page screenshot](docs/images/form-errors.png)
 
@@ -293,9 +284,9 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
 
     - Footer was split into three columns. Including navigational links in the footer with three columns enhances website usability by organizing content effectively, providing users with easy access to important pages, improving navigation efficiency, and optimizing space utilization, thereby enhancing overall user experience.
 
-    - Links to social media such as Facebook, Instagram, and GitHub proflie.
+    - Links to social media such as Facebook, Instagram, and GitHub profile.
 
-    - The footer contains the Subscribe to Newsletters button, clickin on which opens a dedicated page with the subscribe form.
+    - The footer contains the Subscribe to Newsletters button, clicking on which opens a dedicated page with the subscribe form.
 
     ![Site's home page screenshot](docs/images/footer.png) 
  
@@ -309,15 +300,15 @@ Responsive Design: Enjoy a seamless browsing experience across devices with our 
 
 # Agile Methodology
     
-    - Github Projects was used to keep track of the User Stories and progress of the prject. 
+    - Github Projects was used to keep track of the User Stories and progress of the project. 
     - The link to the project is located [here](https://github.com/users/slbabin/projects/6/views/1). 
 
 
-# Bussniess model & Marketing
+# Business model & Marketing
 
 ### Business Model:
 
-The business model for the Poster Shop website  follow an e-commerce model, focusing on curating and selling a wide variety of vintage and retro posters to customers worldwide. Here's a breakdown of the key components: 
+The business model for the Poster Shop website follow an e-commerce model, focusing on curating and selling a wide variety of vintage and retro posters to customers worldwide. Here's a breakdown of the key components: 
   - **Product Curation:** Curate a diverse collection of vintage and retro posters spanning various themes such as movie posters, travel posters, art deco, music, and more. Ensure high-quality images and accurate descriptions for each poster.
 
   - **Inventory Management:** Maintain an organized inventory system to track available posters, manage stock levels, and update listings promptly. Regularly source new posters to keep the collection fresh and appealing to customers.
@@ -377,14 +368,14 @@ The [ElephantSQL](https://www.elephantsql.com) PostgreSQL database was used for 
 
   - Sign-up with your GitHub account on the ElephantSQL site.
   - Click Create New Instance to start a new database.
-  - Provid a name for the database.
+  - Provide a name for the database.
   - Select the Tiny Turtle (Free) plan.
   - Select the Region and Data Center closest .
   - Once created, click on the new database name, where you can get the database URL and Password.
 
 ### Amazon AWS
 
-Due to the fact that Heroku doesn't doesn't allow persist media and staticfiles, I used  Amazon Web Services (AWS) to store media and static files online.
+Due to the fact that Heroku doesn't allow persist media and static files, I used  Amazon Web Services (AWS) to store media and static files online.
 
 After an AWS account is created, make sure you logged to the AWS Management Console page.
 
@@ -461,7 +452,7 @@ Heroku needs two additional files in order to deploy properly.
  - requirements.txt
  - Procfile
 
- - In the projects's settings file in ALLOWED_HOSTS you need to add Heroku app URL.
+ - In the project's settings file in ALLOWED_HOSTS you need to add Heroku app URL.
 
  For Heroku deployment, you need to connect your own GitHub repository to the newly created app:
  - Click on the Deploy tab.
