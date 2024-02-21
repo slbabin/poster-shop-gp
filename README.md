@@ -23,12 +23,12 @@ The live version of this app is located [here](https://poster-shop-4968517d882f.
 * [Sitemap](#sitemap)
 * [Testing](#testing)
 * [Deployment](#deployment)
-    * [ElephantSQL Database](#elephantSQL-database)
-    * [Amazon AWS](#amazon-AWS)
-    * [S3 Bucket](#S3-bucket)
-    * [AM](#AWS)
-    * [Final AWS Setup](#final-awsssetup)
-    * [Heroku Deployment](#heroku-deploymentp)
+    * [ElephantSQL Database](#elephantsql-database)
+    * [Amazon AWS](#amazon-aws)
+    * [S3 Bucket](#s3-bucket)
+    * [IAM](#iam)
+    * [Final AWS Setup](#final-aws-setup)
+    * [Heroku Deployment](#heroku-deployment)
 * [Technologies Used](#technologies-used)
 * [Credits](#credits)
 
@@ -462,7 +462,7 @@ Heroku needs two additional files in order to deploy properly.
  - Alternatively, automatic deployment can be enabled.
 
 
-# Technologies used for this project
+# Technologies used
 
 [Django](https://en.wikipedia.org/wiki/Django_web_framework) - Django is a high-level Python web framework primarily used for building this ecommerce application. It provides a robust set of tools, libraries, and patterns that facilitate rapid development, scalability, and maintainability of a web application.
 

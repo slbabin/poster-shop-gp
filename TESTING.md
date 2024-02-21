@@ -113,9 +113,9 @@ User stories were manually tested to ensure all acceptance criteria were met.
 | View saved profile info | Clicking on My Profile will open the page with user's information. | Pass    |   |
 | View order history | My profile page will display all previously completed orders. | Pass    |   |
 | View individual order | Clicking on the old order link will open that order details.  | Pass    |   |
-| Contact form | Clicking on the Conact menu item on top or in the footer will redirect to the Contact form. | Pass    |   |
+| Contact form | Clicking on the Contact menu item on top or in the footer will redirect to the Contact form. | Pass    |   |
 | Contact success message | Upon submitting the contact form, the success message will display.  | Pass    |   |
-| Subscribe to newsletters | Clicking on the Subscribe to newsletters button in the footer redirects to the newletters form.  | Pass    |   |
+| Subscribe to newsletters | Clicking on the Subscribe to newsletters button in the footer redirects to the newsletters form.  | Pass    |   |
 | Pages links | Clicking on the links in the site menu will open the corresponding page.  | Pass    |   |
 
 ### As a site admin
@@ -177,5 +177,5 @@ Only a limited amount of automated tests were conducted on this application, mos
 
 | Bug/Issue | Solution |
 | --- | --- | 
-| After completing the purchase, no order confirmaton email was sent to the user. | It turned out that I didn't include stripe library in the webhook_handler file and this caused error 500 in the Stripe logs. I fixed this by importing stripe in this file | 
-| Sripe displayed the error: null value in column "street_address2" of relation "checkout_order" violates not-null constraint  | This field accidentally was made required, but in the form this field was not required. So if this field was left empty, it would give an error in Stripe account. Due to time contrains I left this bag unfixed. | 
+| After completing the purchase, no order confirmation email was sent to the user. | It turned out that I didn't include stripe library in the webhook_handler file and this caused error 500 in the Stripe logs. I fixed this by importing stripe in this file | 
+| Stripe displayed the error: null value in column "street_address2" of relation "checkout_order" violates not-null constraint  | This field accidentally was made required, but in the form this field was not required. So if this field was left empty, it would give an error in Stripe account. Due to time constrains I left this bag unfixed. | 
